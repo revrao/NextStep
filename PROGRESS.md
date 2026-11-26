@@ -1,7 +1,7 @@
 # NextStep progress
 
 ## Status
-November 26: all 36/36 latest live acceptance cases pass, including all 9 live-eligible held-out cases. Today's selective run passed 16/16 outstanding cases with no retries and no behavior changes. Protected local live AI is enabled; a real authenticated browser request passed and missing-code access was rejected. Mock/fallback remain available. All historical failures remain in cumulative metrics. Human relevance remains unmeasured; no paid billing or Vercel deployment was enabled.
+November 26: all 36/36 latest live acceptance cases pass, including all 9 live-eligible held-out cases. Today's selective run passed 16/16 outstanding cases with no retries and no behavior changes. Protected local live AI is enabled; a real authenticated browser request passed and missing-code access was rejected. Mock/fallback remain available. All historical failures remain in cumulative metrics. The owner now reports successful independent qualitative manual testing of profile personalization, feedback adaptation and authentication, plus satisfaction with design/core behavior. Numerical human relevance remains unmeasured. Final manual Vercel Hobby deployment guide is prepared; hosted live remains disabled until actual protection checks. No paid billing or Vercel deployment was enabled.
 
 ## Plan
 1. Foundation: Next.js, versioned specification, acceptance cases, safety architecture.
@@ -17,7 +17,7 @@ November 26: all 36/36 latest live acceptance cases pass, including all 9 live-e
 - No free-form caregiver text is sent to Gemini; model selects IDs and validated reason codes only.
 
 ## Current limitations / remaining manual review
-No unresolved technical acceptance case remains. Historical provider availability failures remain in evidence; future outages/quota can still produce labeled fallback. Human relevance review is pending (docs/human-review.md). All activities/rules are unreviewed classroom content; no real-child use is authorized. Manual local access steps: docs/local-live-testing.md. Hosted live use and Vercel deployment remain disabled.
+No unresolved technical acceptance case remains. Historical provider availability failures remain in evidence; future outages/quota can still produce labeled fallback. Owner qualitative manual observations are recorded in docs/prototype-evidence.md; structured numerical relevance review remains unmeasured (docs/human-review.md). All activities/rules are unreviewed classroom content; no real-child use is authorized. Manual local access steps: docs/local-live-testing.md. Hosted live use and Vercel deployment remain disabled.
 
 ## Core milestone (November 25, 2026)
 Implemented Next.js/React/TypeScript/Tailwind app, warm responsive UI with original SVG illustrations, fictional onboarding and 3 samples, profile editing/switching, dashboard/library/detail dialogs, structured compatible feedback, adaptive ranking, persistent history, local settings/deletion and local insights.
@@ -120,3 +120,9 @@ Explicit-unlock final checks: production build and TypeScript pass; 53 unit/inte
 TypeScript initially retained an obsolete diagnostic after the environment helper type was narrowed; a fresh non-incremental check passed, and removing only ignored tsbuildinfo caches restored the normal check. No source/criterion was weakened. Owned test servers were stopped. Key and classroom code were not changed, displayed or persisted by the app; final browser-asset/staged-secret scan and GitHub synchronization accompany the delivery commit.
 
 Final UI review: two additional focused desktop/mobile unlock-form checks passed automated WCAG scans and horizontal-overflow assertions. Fixture-only form screenshots were visually inspected and kept in ignored test output; real credential settings were not photographed. Total browser coverage executed is 24 checks (22 full regressions plus two focused form checks), all passing.
+
+
+## Final manual deployment preparation · November 26, 2026
+Reviewed repository, original specification, deployment guide, server gates, environment template and current official Vercel documentation. Free All Deployments Vercel Authentication now covers production on Hobby; Standard Protection is insufficient for its production alias. Prepared a mock-first import and a separately gated private live activation with one included fixed-window IP firewall rule. The guide includes exact environment scopes/names, unsigned-in direct API protection checks, provider-free throttle verification, one live smoke, and old-deployment shutdown precautions. No application/model/prompt/design change or new provider request was needed. Existing local configuration and hosted-protection=false were preserved. Owner must create only the new NextStep project, establish/verify protection, then privately enter credentials and redeploy if choosing live. No other hosting project was accessed.
+
+Readiness checks passed: production build, TypeScript, 53 unit/integration tests, and all 24 desktop/mobile browser checks. Secret checks passed across 229 historical Git blobs and 22 browser assets; private local configuration is ignored/untracked and mode 0600. Documentation-only changes are the only deliverables in this milestone. Validation details are recorded in docs/validation.md; the validated milestone is committed and pushed to main as the final handoff. Existing raw evaluations and historical failures are unchanged. No deployment or hosted validation is claimed.

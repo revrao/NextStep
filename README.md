@@ -77,3 +77,7 @@ November 26 resume: `npm run eval:resume` selects only compatible missing/unreso
 
 ## Unlocking local live access
 In Profile & settings, choose Live Gemini, privately enter the classroom code and click **Unlock Live AI** (or press Enter). Wait for the success message and **Live AI unlocked** indicator, then navigate to Your day and request recommendations. Verification makes no Gemini request. Access remains in this tab's memory across navigation; editing/locking/changing mode or refreshing relocks it. If the running server rejects a correct local code after a configuration change, restart NextStep and refresh the page. Full guidance: [local live testing](docs/local-live-testing.md). Never paste keys/codes into chat or persist them in browser storage.
+
+
+## Manual Vercel Hobby deployment
+The owner can import `revrao/NextStep` as a new Next.js project using [the exact deployment guide](docs/deployment.md). Start with mock mode and no hosted credentials. Free Vercel Authentication must protect **All Deployments**, with the included API firewall rule verified, before privately configuring hosted live mode. The agent has not deployed this project. Owner-reported independent live testing observations are recorded in [prototype evidence](docs/prototype-evidence.md); no numerical human relevance score is inferred.
