@@ -27,9 +27,13 @@ Browser tests run against the production build. On macOS they use installed Goog
 
 Recorded results and limitations: [validation](docs/validation.md). Mock results are not Gemini performance evidence. Evals regenerate `evals/latest-mock.json` and the UI's compact `src/data/evaluation-summary.json`; rebuild after changing them.
 
-## Activate Gemini later
+## Activate Gemini
 
-1. Copy `.env.example` to `.env.local`. Keep this file out of Git.
+Phase 1 has prepared a local, ignored `.env.local` in this checkout. Follow [the activation handoff](docs/gemini-activation.md) to insert your key manually and confirm the Free tier before testing. Do not overwrite an existing local environment file.
+
+For a fresh clone:
+
+1. Copy `.env.example` to `.env.local` only if it does not already exist. Keep this file out of Git.
 2. Create a Gemini Developer API key on a **free-tier, unbilled** Google project. Set `GEMINI_API_KEY`, and retain or verify `GEMINI_MODEL=gemini-3.5-flash-lite`.
 3. Leave `LIVE_EVAL_PASSED=false`. Run a small direct provider evaluation: `npm run eval:live -- --limit=3 --offset=0`. This evaluation bypasses the application gate to test the model, but still applies all engine eligibility and output checks. No automatic retries or paid-provider switching occur.
 4. Run subsequent small batches with offsets 3, 6, etc., respecting the current free-tier quota. Review all applicable development and held-out results plus the unit guardrail suite. Every live batch is saved under `evals/live/`. A three-case batch is **not** complete acceptance evidence. Any critical failure keeps live mode disabled until fixed and retested. Human relevance review remains separate.

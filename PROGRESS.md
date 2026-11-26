@@ -16,8 +16,8 @@ Delivered and validated: complete mock-mode prototype, Gemini adapter, documenta
 - Library contains 36 original synthetic fixtures and four original adaptations of verified UNICEF ideas. All content is unreviewed; no clinical endorsement is claimed.
 - No free-form caregiver text is sent to Gemini; model selects IDs and validated reason codes only.
 
-## Blockers
-No Gemini credentials supplied; live model evaluation cannot be performed. Continue full mock implementation and transport tests.
+## Current blocker
+Owner generated a Gemini key and approved live activation/testing. Phase 1 configuration is prepared; waiting for manual key insertion into the ignored `.env.local` and confirmation that its project is Free tier with billing disabled. Do not run actual provider requests before that confirmation.
 
 ## Core milestone (November 25, 2026)
 Implemented Next.js/React/TypeScript/Tailwind app, warm responsive UI with original SVG illustrations, fictional onboarding and 3 samples, profile editing/switching, dashboard/library/detail dialogs, structured compatible feedback, adaptive ranking, persistent history, local settings/deletion and local insights.
@@ -48,3 +48,13 @@ Documentation: README, full SPEC, matching AGENTS/CLAUDE guidance, architecture/
 
 ### Handoff
 Run npm ci, npm run dev; for production demo npm run build then npm start. Read docs/validation.md and docs/demo.md. Evaluation output is evals/latest-mock.json; rerunning it updates the UI summary and requires rebuilding. Git foundation and core milestones were already pushed to origin/main. Final QA/documentation milestone is ready for commit and synchronization; verify git status and origin synchronization on resume. No unresolved application bug was observed in the executed acceptance suite; browser coverage is Chromium desktop/emulation, not all browsers or physical devices.
+
+
+## Live activation · Phase 1 (November 25, 2026)
+Owner reviewed and accepted the local prototype and requested live activation, bounded evaluations, and an internal evaluation dashboard. Preserve design, mock backup, access restrictions, and acceptance criteria. No Vercel deployment or unrelated project work is authorized.
+
+Reviewed server Gemini transport, request validation, timeout/no-retry behavior, access-code/evaluation/hosted-protection gates, live evaluation runner, and activation documentation. Verified Google’s current standard text free-tier listings for 3.5 Flash-Lite, 3.6 Flash, and 3.8 Flash. Retained configurable gemini-3.5-flash-lite for constrained ranking; actual key-specific model access and quality are not yet verified.
+
+Created ignored, untracked `.env.local` with mode 0600, blank GEMINI_API_KEY, generated local access code, AI_MODE=mock, LIVE_EVAL_PASSED=false, CLASSROOM_DEPLOYMENT_PROTECTED=false. No credential values were printed. Verified environment variants/backups are ignored and only blank `.env.example` is tracked. Existing next-env.d.ts dev-generated change was preserved, not included in this milestone.
+
+Manual next action: owner inserts the API key in `.env.local`, saves it, confirms Free tier/unbilled project, and replies without including the key. Phase 2 begins only then: minimal connectivity, profile/feedback checks, bounded/paced live evals, investigate failures without weakening criteria. Phase 3 adds actual live reporting to the internal Insights view and updates evidence. Details and source links: docs/gemini-activation.md. No Gemini API requests or new live evaluation results exist yet.

@@ -10,3 +10,7 @@ Alternatives considered: open-ended chat rejected because the central job is con
 Implementation assistance: generated application code, activity fixture drafts, eval fixtures, transport tests, and documentation. No subagents or complex multi-agent runtime were used. No AI-created clinical review, customer interviews, testimonials, pilots, or live Gemini test results were fabricated.
 
 Validation: deterministic/adversarial evaluations and mocked transport tests are distinct from actual Gemini API evaluation. Browser QA caught and corrected an origin comparison bug; rendered review prompted larger text. Exact final checks are in `docs/validation.md`. Logs contain no actual credentials or real child information.
+
+
+## Live activation preparation · Phase 1
+Owner approved the visual prototype and obtained an AI Studio key. Reviewed existing integration and current official Google model/pricing/rate-limit documentation. Retained gemini-3.5-flash-lite instead of automatically moving to a larger free-tier Flash model; actual quality remains to be evaluated. Prepared an ignored owner-only local environment file with a blank key and generated classroom code. Website live gates remain disabled. Documented manual key insertion and the bounded validation/reporting continuation. No real API request was performed, no credentials were exposed, and no live acceptance result was invented.

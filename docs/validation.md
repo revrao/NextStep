@@ -18,3 +18,6 @@ Mock report dates are UTC; this development session is November 25 in the owner'
 Screenshots/traces remain in ignored `test-results/`. Four selected fictional-data screenshots were copied to `docs/screenshots/` after inspection. No hosting deployment has been created or verified.
 
 Recorded mock latency: median 0.117 ms; p95 1.057 ms. These measurements include no external AI/network latency. All mock evaluation expenditure was $0. The live latency and cost targets remain untested.
+
+## Live activation Phase 1 follow-up
+Reviewed provider/API/CLI activation paths and official Google model/pricing/rate-limit documentation. Retained gemini-3.5-flash-lite. Prepared an ignored owner-only local environment with an empty key and disabled website live gates; verified only the blank example environment is tracked. The 25 unit/integration tests pass again. No runtime behavior was changed, so no production/browser rebuild was needed for this preparation-only milestone. No real Gemini request or new live evaluation result exists; manual key insertion and Free-tier project confirmation are pending. See docs/gemini-activation.md.
