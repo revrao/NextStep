@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-26T22:47:54.804Z",
+  "passed": true,
+  "unauthenticatedStatus": 403,
+  "httpStatus": 200,
+  "mode": "live",
+  "providerModelVersion": "gemini-3.5-flash-lite",
+  "latencyMs": 2696.4042080000004,
+  "tokenUsage": {
+    "input": 917,
+    "output": 69,
+    "total": 986
+  },
+  "mockBackupMode": "mock"
+}

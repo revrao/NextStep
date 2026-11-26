@@ -35,6 +35,7 @@ const report: {
   mode?: string;
   httpStatus?: number;
   providerModelVersion?: string;
+  providerFailure?: string;
   latencyMs?: number;
   tokenUsage?: unknown;
   unauthenticatedStatus?: number;
@@ -91,6 +92,7 @@ try {
   const result = await response.json();
   report.httpStatus = response.status();
   report.mode = result.mode;
+  report.providerFailure = result.providerFailure;
   report.providerModelVersion = result.providerModelVersion;
   report.latencyMs = result.latencyMs;
   report.tokenUsage = result.usage ?? null;
@@ -106,6 +108,7 @@ try {
       { exact: true },
     )
     .waitFor();
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
   await page.screenshot({
     path: "docs/screenshots/desktop-live-gemini.png",
     fullPage: true,
@@ -132,6 +135,11 @@ try {
   await browser?.close();
   server.kill("SIGTERM");
 }
+fs.mkdirSync("evals/browser", { recursive: true });
+fs.writeFileSync(
+  `evals/browser/${report.date.replaceAll(":", "-")}.json`,
+  JSON.stringify(report, null, 2) + "\n",
+);
 fs.writeFileSync(
   "evals/local-browser-live.json",
   JSON.stringify(report, null, 2) + "\n",

@@ -33,6 +33,12 @@ const mock = JSON.parse(fs.readFileSync("evals/latest-mock.json", "utf8"));
 const smoke = fs.existsSync("evals/connectivity-live.json")
   ? JSON.parse(fs.readFileSync("evals/connectivity-live.json", "utf8"))
   : null;
+const browser = fs.existsSync("evals/local-browser-live.json")
+  ? JSON.parse(fs.readFileSync("evals/local-browser-live.json", "utf8"))
+  : null;
+const activation = fs.existsSync("evals/local-activation.json")
+  ? JSON.parse(fs.readFileSync("evals/local-activation.json", "utf8"))
+  : null;
 const pct = (n: number | null) =>
   n === null ? "Not measured" : `${(n * 100).toFixed(1)}%`;
 const secs = (n: number | null) =>
@@ -60,13 +66,21 @@ Reported usage: ${summary.tokenUsage.input} input, ${summary.tokenUsage.output} 
 
 Connectivity smoke (separate from recommendation denominators): ${smoke?.connected ? "passed" : "not verified"}; model HTTP ${smoke?.modelHttpStatus ?? "not measured"}, generation HTTP ${smoke?.generationHttpStatus ?? "not measured"}, ${smoke?.tokenUsage?.totalTokenCount ?? "unknown"} total tokens. Model-reported versions in recommendation evidence: ${summary.providerModelVersions.join(", ") || "not yet recorded"}.
 
+## Protected local activation and website verification
+Local live enabled: ${activation?.localLiveEnabled === true ? "yes, with the classroom access code required" : "not recorded"}. Hosted protection flag remains false; no deployment is authorized. Actual browser smoke: ${browser?.passed ? "passed" : "not yet passed/recorded"}; unauthenticated HTTP ${browser?.unauthenticatedStatus ?? "unmeasured"}, authenticated HTTP ${browser?.httpStatus ?? "unmeasured"}, result mode ${browser?.mode ?? "unmeasured"}, mock backup ${browser?.mockBackupMode ?? "unmeasured"}. Browser request latency ${secs(browser?.latencyMs ?? null)}, reported total tokens ${browser?.tokenUsage?.total ?? "unmeasured"}. Browser/connectivity requests are excluded from recommendation-evaluation denominators. Credentials are not present in reports or screenshots. Private manual testing: docs/local-live-testing.md.
+
 ## Deterministic and injected guardrail evidence
 Mock acceptance ${mock.passed}/${mock.cases}; invalid provider-output fixtures safely blocked ${mock.safety.injectedOutputs.passed}/${mock.safety.injectedOutputs.cases}; invalid input rejections ${mock.safety.inputRejections.passed}/${mock.safety.inputRejections.cases}; expected abstentions ${mock.safety.abstentions.passed}/${mock.safety.abstentions.cases}. These tests do not involve actual unsafe Gemini output. Unit/integration tests separately inject HTTP 429/500/503, malformed JSON, blocked/truncated output and timeouts without consuming live quota.
 
 ## Observed failures and limitations
-The first age-6 attempt fell back at the unchanged ~12-second timeout deadline with a legacy generic diagnostic code; one bounded recheck passed. That legacy diagnostic remains unclassified in the category counters rather than being relabeled after the fact. The first age-11 attempt received HTTP 503; one bounded recheck after cooldown passed. Root cause inside Google's service or the network was not independently established. Original failures remain in immutable batch files and rate/latency denominators. A later focus-cognitive request also returned HTTP 503 and remains failed unless separately rechecked. The initial continuation stopped. A separate single pass collects only unexecuted cases (maximum 20), never retries a failed case, and stops on quota/output/acceptance failure or two further availability failures. This changes coverage collection only; fallback results remain failed live recommendations and all acceptance assertions stay unchanged. No safety threshold, eligibility rule, prompt or held-out expectation was weakened to improve scores.
+Historical availability failures remain in immutable batch files and attempt/latency denominators, even after a passing recheck. The November 25 session included four HTTP 503 responses and a legacy generic failure at the configured ~12-second deadline. The legacy diagnostic remains unclassified rather than being relabeled after the fact. The exact provider/network root cause was not independently established.
+
+On November 26, continuation selects only missing or unresolved cases from matching model/behavior versions. Single-request batches retain 22-second pacing. Only HTTP 503 may receive bounded exponential backoff (30 then 60 seconds), at most two retries per case, six retries and 22 requests per resumed session. Quota, recommendation-quality, output-validation or persistent availability failures stop the session. Every retry is a separate measured attempt; no previously passed case is repeated merely to improve the score. No prompt, eligibility rule, safety constraint or held-out expectation has been weakened. Current unresolved cases are listed above; historical failures below do not imply those cases remain unresolved.
+
 
 Failure history: ${summary.failureHistory.map((r) => r.case + " (" + r.category + ")").join(", ") || "none"}.
+
+Human review checklist: docs/human-review.md. Protected local manual test instructions: docs/local-live-testing.md.
 
 Raw batches: evals/live/*.json. Aggregate: evals/live-summary.json. Mock: evals/latest-mock.json. Connectivity: evals/connectivity-live.json. Regenerate with npm run eval:summary; rebuild the app to refresh the imported internal dashboard snapshot. Relevance ratings require a real human review and remain unmeasured. All content remains professionally unreviewed classroom material.
 `;

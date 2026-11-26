@@ -16,7 +16,8 @@
     "eval:live": "node --env-file-if-exists=.env.local --import tsx scripts/evaluate.ts --live",
     "ai:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-gemini.ts",
     "eval:summary": "node --env-file-if-exists=.env.local --import tsx scripts/summarize-evaluations.ts",
-    "eval:feedback": "node --env-file-if-exists=.env.local --import tsx scripts/check-live-feedback.ts"
+    "eval:feedback": "node --env-file-if-exists=.env.local --import tsx scripts/check-live-feedback.ts",
+    "eval:resume": "node --env-file-if-exists=.env.local --import tsx scripts/resume-live.ts"
   },
   "dependencies": {
     "lucide-react": "1.80.0",

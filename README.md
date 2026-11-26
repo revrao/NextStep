@@ -29,7 +29,7 @@ Recorded results and limitations: [validation](docs/validation.md) and [live Gem
 
 ## Activate Gemini
 
-The owner has configured a key and confirmed an unbilled Free-tier project. Current measured results, including failures and coverage, are in [live validation](docs/live-validation.md). Repeated HTTP 503 responses stopped the bounded run; **website live access remains disabled**. [Resume instructions](docs/live-resume.md) list exact outstanding cases. The internal **Team insights** view distinguishes live and mock evidence; human-rated relevance remains unmeasured. Do not infer that website access is enabled from a passing partial batch.
+The owner has configured a key and confirmed an unbilled Free-tier project. Current measured results, including failures and coverage, are in [live validation](docs/live-validation.md). November 26 continuation completed **36/36 latest live acceptance cases**, including **9/9 live-eligible held-out cases**. **Protected local live access is enabled in this owner checkout**, and a real authenticated website request passed. Fresh clones remain mock by default. [Local testing instructions](docs/local-live-testing.md) explain private code entry and fallback. The internal **Team insights** view distinguishes live and mock evidence; human-rated relevance remains unmeasured. Historical failures remain in cumulative metrics; human relevance is unmeasured.
 
 Phase 1 has prepared a local, ignored `.env.local` in this checkout. Follow [the activation handoff](docs/gemini-activation.md) to insert your key manually and confirm the Free tier before testing. Do not overwrite an existing local environment file.
 
@@ -70,3 +70,6 @@ Read `SPEC.md` for the complete supplied project request and `PROGRESS.md` for c
 - `npm run eval:summary`: no external requests; regenerates compatible live aggregate, internal dashboard data and the measured live-validation document. Original failed batches remain preserved.
 
 Live website mode remains a separate gated decision. Acceptance results, runtime fault-injection tests, and human relevance are distinct. Never rerun the live commands continuously to obtain a better score. Free-tier 429 exhaustion is a reason to stop, not enable billing. The rotated classroom code is only in the ignored `.env.local`; retrieve it privately for local UI use and never include it in screenshots, logs or Git.
+
+
+November 26 resume: `npm run eval:resume` selects only compatible missing/unresolved cases, skips passed cases and applies 30/60-second HTTP 503 backoff (max two retries/case, six/session, 22 requests). It makes no provider calls when no cases are pending. No model/prompt change occurred, so the previous passing cases were reused. The [human-review checklist](docs/human-review.md) is the remaining manual relevance assessment; no ratings have been fabricated.

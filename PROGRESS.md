@@ -1,7 +1,7 @@
 # NextStep progress
 
 ## Status
-Live Gemini connectivity and the recommendation engine are verified with actual provider calls. All three sample profiles and both baseline-driven feedback scenarios passed. Full live acceptance is blocked by repeated provider HTTP 503 responses; the bounded external run has stopped. Website remains in mock mode with live and hosted gates disabled. Internal Team insights and measured reporting are implemented. No Vercel deployment or paid billing was enabled.
+November 26: all 36/36 latest live acceptance cases pass, including all 9 live-eligible held-out cases. Today's selective run passed 16/16 outstanding cases with no retries and no behavior changes. Protected local live AI is enabled; a real authenticated browser request passed and missing-code access was rejected. Mock/fallback remain available. All historical failures remain in cumulative metrics. Human relevance remains unmeasured; no paid billing or Vercel deployment was enabled.
 
 ## Plan
 1. Foundation: Next.js, versioned specification, acceptance cases, safety architecture.
@@ -16,8 +16,8 @@ Live Gemini connectivity and the recommendation engine are verified with actual 
 - Library contains 36 original synthetic fixtures and four original adaptations of verified UNICEF ideas. All content is unreviewed; no clinical endorsement is claimed.
 - No free-form caregiver text is sent to Gemini; model selects IDs and validated reason codes only.
 
-## Current blocker
-Intermittent Gemini availability: four actual HTTP 503 responses and one legacy generic fallback at the 12-second deadline. Full acceptance coverage is incomplete: 23/36 cases executed, 20 latest passes, 3 latest availability failures and 13 unexecuted cases (including the 9 live-eligible held-out cases). No key change or billing upgrade is indicated by these results. Wait for service stability before a deliberate bounded continuation; no continuous retries. Exact case offsets are in docs/live-resume.md.
+## Current limitations / remaining manual review
+No unresolved technical acceptance case remains. Historical provider availability failures remain in evidence; future outages/quota can still produce labeled fallback. Human relevance review is pending (docs/human-review.md). All activities/rules are unreviewed classroom content; no real-child use is authorized. Manual local access steps: docs/local-live-testing.md. Hosted live use and Vercel deployment remain disabled.
 
 ## Core milestone (November 25, 2026)
 Implemented Next.js/React/TypeScript/Tailwind app, warm responsive UI with original SVG illustrations, fictional onboarding and 3 samples, profile editing/switching, dashboard/library/detail dialogs, structured compatible feedback, adaptive ranking, persistent history, local settings/deletion and local insights.
@@ -86,3 +86,22 @@ Median all-attempt latency 1.545s, p95 3.355s; provider usage 25201 reported tok
 
 ### Delivery and exact continuation
 All independent implementation/reporting/QA work for this follow-up is complete and preserved. The external blocker is incomplete Gemini live acceptance due to repeated HTTP 503 responses; do not describe live website activation as complete. Key and rotated code remain local, no values exposed, no paid billing/deployment changes. Review docs/live-validation.md and docs/live-resume.md before any future bounded provider requests. Current credential setup needs no change based on observed 503s. The staged secret scan and GitHub synchronization will be verified with the final evidence commit; local server instances owned by the browser checks were stopped. No continuous evaluation or automation remains running.
+
+
+## Resumed November 26, 2026
+Reviewed clean repository, prior measured evidence and exact outstanding offsets. Today's minimal model/generation check passed with 6 reported tokens (~2.41 seconds); yesterday's connectivity evidence was archived unchanged. Selection prompt/model/rules/library remain unchanged. Added a finite resume planner that skips prior passes, prioritizes 13 missing cases then three unresolved cases, and preserves every retry as its own batch. Single-request batches retain 22-second pacing; only HTTP 503 retries use bounded 30/60-second exponential backoff, max two per case and six per session, total <=22 requests. Stop on quota/quality/guardrail failures or persistent 503s. No live flags enabled yet. No paid billing or deployment changes. Added regression tests for selective planning, historical preservation and retry limits.
+
+Local preflight: all 43 unit/integration/planner tests pass. TypeScript initially found duplicated ignored Next.js-generated type copies (routes.d 2/3.ts and companion generated duplicates). Removed only those duplicate build artifacts; source files were untouched and TypeScript now passes. Mock evaluations remain 52/52. Updated connectivity/browser smoke tooling archives immutable reports so future latest-report refreshes do not discard history. No caregiver UI redesign or recommendation behavior change.
+
+
+## November 26 technical completion and local activation
+Selective continuation completed all 16 outstanding cases in 16 actual provider requests, zero retries; prior passing cases were not rerun. Latest acceptance: 36/36 passed, including 9/9 live-eligible held-out cases. The tenth held-out fixture is a concern abstention covered by local guardrails without a provider request. All three fictional sample profiles and both real-baseline feedback scenarios retain their prior passing evidence. Prompt-v1/schema-v1/rules-v1/library-v1 unchanged. No quality or grounding failure was observed; no acceptance criterion weakened.
+
+Cumulative actual evaluation: 41/46 successes (89.1%), five historical fallback failures retained (10.9%). Median 1.380s, p95 4.063s across all attempts; 43783 reported tokens on 41/46 attempts, error-request usage unknown. Estimated API cost $0 under confirmed Free tier, not an independent billing audit.
+
+After reviewing full technical coverage, 43 passing unit/integration tests, 52/52 mock evals, passing TypeScript and production build, enabled only local AI_MODE=live and LIVE_EVAL_PASSED=true in ignored mode-0600 .env.local. CLASSROOM_DEPLOYMENT_PROTECTED remains false. Existing key and rotated classroom code were preserved without display. Protected browser smoke passed: missing code 403; authenticated request 200 with actual Gemini mode/model; mock backup returned mock. Browser latency 2.696s and 986 reported tokens, separate from eval denominators. Smoke server was stopped; no deployment.
+
+Documentation/report/dashboard snapshot and local test/human-review instructions updated. Final browser regressions and secret/Git synchronization checks follow. Actual human ratings remain unmeasured; do not claim subjective relevance or clinical validation. No continuous evaluation remains running.
+
+
+Final November 26 QA: production build and TypeScript pass; 43 unit/integration tests, 52/52 mock evals and 12/12 desktop/mobile browser/accessibility checks pass (19.3s). Actual protected-browser live verification passed independently. Final Team insights screenshots and the real live-recommendation screenshot were inspected and saved; no credential or settings screen was captured. Owned smoke/regression servers were stopped. Final secret scan and GitHub synchronization are performed with the delivery commit. Remaining manual steps are starting/restarting the local app, privately entering the classroom code, and conducting the human relevance checklist. No unresolved technical acceptance case remains; provider outages and unreviewed content remain limitations.

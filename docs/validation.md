@@ -1,5 +1,7 @@
 # Validation record · November 25, 2026 (America/Los_Angeles)
 
+November 26 current status: all 36/36 latest live acceptance cases pass, including nine live-eligible held-out cases. Today's selective run completed the 16 outstanding cases with zero retries and no prompt/behavior changes; prior passes were reused. Cumulative provider evidence retains 41/46 successful live evaluation attempts and five historical fallbacks. Protected local live access is enabled and a genuine authenticated website request passed (missing code 403, live request 200, mock backup verified). Human relevance remains unmeasured. See docs/live-validation.md, docs/local-live-testing.md and docs/human-review.md. Earlier incomplete/zero-request statements below are dated historical milestones, not the current activation status.
+
 Current real-provider evidence is maintained in [live-validation.md](live-validation.md). Earlier zero-request statements below describe the initial release and Phase 1 only.
 
 ## Initial prototype checks (before live activation)
@@ -32,3 +34,9 @@ Current local gates remain mock/false/false. Quota exhaustion, invalid output, a
 
 
 Final refresh: the production build passed after the final live-summary snapshot. All 12 desktop/mobile Chrome tests passed in 20.0 seconds, including the internal dashboard, all caregiver journeys, dialog keyboard behavior, responsive overflow checks and automated WCAG scans. Updated desktop/mobile internal-dashboard screenshots were visually inspected and saved. No external AI calls were made during this final browser run. Final TypeScript check and 39 unit/integration/aggregation tests passed. No acceptance gate was enabled, and no live website browser smoke was claimed.
+
+
+## November 26 completed continuation
+16/16 outstanding cases passed with zero retries; 36/36 latest technical acceptance cases now pass, including nine live-eligible held-out cases. No model/prompt/behavior changed and previous passing cases were reused. Historical failed calls remain in all-attempt metrics. Latest cumulative success is 41/46, with five retained fallback failures; median 1.380s and p95 4.063s. No current quality or grounding failure remains unresolved; human relevance is unmeasured.
+
+Final checks: 43 unit/integration/planner tests, TypeScript, 52 mock evaluations, production build and all 12 desktop/mobile browser/accessibility tests passed. Local live mode was enabled only after reviewing full technical acceptance. A real website request returned HTTP 200 with live Gemini mode/model (2.696s, 986 reported tokens); missing-code access returned 403 and mock backup passed. This separate browser request is not added to the evaluation denominator. Credential-bearing traces, headers and settings screenshots were not recorded. Live/Team insights screenshots inspected. No deployment or paid billing was enabled.

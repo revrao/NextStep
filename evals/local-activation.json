@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-26T22:47:54.443872+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "localLiveEnabled": true,
+  "classroomCodeRequired": true,
+  "hostedLiveProtectedFlag": false,
+  "acceptedCases": 36,
+  "liveHeldoutCases": 9,
+  "mockCasesPassed": 52,
+  "unitTestsPassed": 43,
+  "productionBuildPassed": true,
+  "humanReviewedRelevance": "Not measured",
+  "deploymentPerformed": false
+}

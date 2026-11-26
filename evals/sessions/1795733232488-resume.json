@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-26T22:40:51.544Z",
+  "model": "gemini-3.5-flash-lite",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "planned": [
+    "not-interested",
+    "single-mastery",
+    "supported-mastery",
+    "same-day-mastery",
+    "held-age-2",
+    "held-age-9",
+    "held-age-21",
+    "held-age-33",
+    "held-age-47",
+    "held-age-59",
+    "held-age-70",
+    "held-combined-constraints",
+    "held-unknown-mastery",
+    "focus-cognitive",
+    "unknown-abilities",
+    "enjoyed"
+  ],
+  "attempts": 16,
+  "retries": 0,
+  "completed": [
+    "not-interested",
+    "single-mastery",
+    "supported-mastery",
+    "same-day-mastery",
+    "held-age-2",
+    "held-age-9",
+    "held-age-21",
+    "held-age-33",
+    "held-age-47",
+    "held-age-59",
+    "held-age-70",
+    "held-combined-constraints",
+    "held-unknown-mastery",
+    "focus-cognitive",
+    "unknown-abilities",
+    "enjoyed"
+  ],
+  "stopReason": null
+}

@@ -6,13 +6,13 @@
     "rules": "rules-v1",
     "library": "library-v1"
   },
-  "updatedAt": "2026-11-26T05:43:37.374Z",
-  "attempts": 30,
-  "successful": 25,
-  "acceptedResponses": 25,
-  "successRate": 0.8333333333333334,
+  "updatedAt": "2026-11-26T22:47:12.448Z",
+  "attempts": 46,
+  "successful": 41,
+  "acceptedResponses": 41,
+  "successRate": 0.8913043478260869,
   "fallbacks": 5,
-  "fallbackRate": 0.16666666666666666,
+  "fallbackRate": 0.10869565217391304,
   "transportFailures": 4,
   "unclassifiedFailures": 1,
   "failureHistory": [
@@ -48,45 +48,27 @@
     }
   ],
   "invalidOutputsPrevented": 0,
-  "medianLatencyMs": 1544.6472500000018,
-  "p95LatencyMs": 3354.533540999997,
-  "latencySamples": 30,
-  "successfulMedianLatencyMs": 1586.1474579999995,
-  "successfulP95LatencyMs": 3170.659458000002,
+  "medianLatencyMs": 1379.8276670000014,
+  "p95LatencyMs": 4062.9968340000014,
+  "latencySamples": 46,
+  "successfulMedianLatencyMs": 1397.6339169999992,
+  "successfulP95LatencyMs": 3354.533540999997,
   "tokenUsage": {
-    "input": 22259,
-    "output": 2942,
+    "input": 38936,
+    "output": 4847,
     "thinking": 0,
-    "total": 25201,
-    "requestsWithUsage": 25
+    "total": 43783,
+    "requestsWithUsage": 41
   },
   "estimatedCostUsd": 0,
   "costBasis": "Owner-confirmed unbilled Free tier; estimate, not a billing audit",
   "coverage": {
     "expected": 36,
-    "executed": 23,
-    "passed": 20,
-    "missing": [
-      "not-interested",
-      "single-mastery",
-      "supported-mastery",
-      "same-day-mastery",
-      "held-age-2",
-      "held-age-9",
-      "held-age-21",
-      "held-age-33",
-      "held-age-47",
-      "held-age-59",
-      "held-age-70",
-      "held-combined-constraints",
-      "held-unknown-mastery"
-    ],
-    "failing": [
-      "focus-cognitive",
-      "unknown-abilities",
-      "enjoyed"
-    ],
-    "heldoutExecuted": 0
+    "executed": 36,
+    "passed": 36,
+    "missing": [],
+    "failing": [],
+    "heldoutExecuted": 9
   },
   "samples": {
     "attempts": 3,
@@ -108,97 +90,97 @@
     {
       "case": "enjoyed",
       "scope": "acceptance",
-      "pass": false,
-      "mode": "fallback",
-      "latencyMs": 1070.6126250000016,
-      "failure": "raw_provider_failed_or_fallback"
-    },
-    {
-      "case": "enjoyed-and-struggled",
-      "scope": "acceptance",
       "pass": true,
       "mode": "live",
-      "latencyMs": 1132.366750000001,
-      "failure": null
-    },
-    {
-      "case": "struggled",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1552.215458000006,
-      "failure": null
-    },
-    {
-      "case": "five-minutes",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1228.762208,
-      "failure": null
-    },
-    {
-      "case": "no-materials",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 3082.3149589999994,
+      "latencyMs": 1397.6339169999992,
       "failure": null
     },
     {
       "case": "unknown-abilities",
       "scope": "acceptance",
-      "pass": false,
-      "mode": "fallback",
-      "latencyMs": 1124.3397499999992,
-      "failure": "raw_provider_failed_or_fallback"
-    },
-    {
-      "case": "focus-social",
-      "scope": "acceptance",
       "pass": true,
       "mode": "live",
-      "latencyMs": 3170.659458000002,
+      "latencyMs": 1123.7286249999997,
       "failure": null
     },
     {
       "case": "focus-cognitive",
       "scope": "acceptance",
-      "pass": false,
-      "mode": "fallback",
-      "latencyMs": 1342.4323750000003,
-      "failure": "raw_provider_failed_or_fallback"
-    },
-    {
-      "case": "focus-gross-motor",
-      "scope": "acceptance",
       "pass": true,
       "mode": "live",
-      "latencyMs": 2622.9679999999935,
+      "latencyMs": 947.2719580000012,
       "failure": null
     },
     {
-      "case": "focus-fine-motor",
+      "case": "held-unknown-mastery",
       "scope": "acceptance",
       "pass": true,
       "mode": "live",
-      "latencyMs": 2396.666707999997,
+      "latencyMs": 4894.205082999997,
       "failure": null
     },
     {
-      "case": "focus-language",
+      "case": "held-combined-constraints",
       "scope": "acceptance",
       "pass": true,
       "mode": "live",
-      "latencyMs": 1379.8276670000014,
+      "latencyMs": 1415.8917499999989,
       "failure": null
     },
     {
-      "case": "age-71",
+      "case": "held-age-70",
       "scope": "acceptance",
       "pass": true,
       "mode": "live",
-      "latencyMs": 1305.4287909999985,
+      "latencyMs": 1254.4259999999995,
+      "failure": null
+    },
+    {
+      "case": "held-age-59",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1259.7427910000006,
+      "failure": null
+    },
+    {
+      "case": "held-age-47",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1078.7683749999997,
+      "failure": null
+    },
+    {
+      "case": "held-age-33",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 4062.9968340000014,
+      "failure": null
+    },
+    {
+      "case": "held-age-21",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 2196.298999999999,
+      "failure": null
+    },
+    {
+      "case": "held-age-9",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1257.1990829999995,
+      "failure": null
+    },
+    {
+      "case": "held-age-2",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1220.8555000000015,
       "failure": null
     }
   ],
@@ -206,5 +188,5 @@
     "status": "Not measured",
     "reviewed": 0
   },
-  "acceptanceReady": false
+  "acceptanceReady": true
 }

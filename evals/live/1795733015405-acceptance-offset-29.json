@@ -1,0 +1,92 @@
+{
+  "scope": "acceptance",
+  "batchOffset": 29,
+  "batchLimit": 1,
+  "date": "2026-11-26T22:43:35.405Z",
+  "mode": "live",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "cases": 1,
+  "passed": 1,
+  "failed": 0,
+  "rawProviderFailures": 0,
+  "fallbacks": 0,
+  "medianLatencyMs": 2196.298999999999,
+  "p95LatencyMs": 2196.298999999999,
+  "safety": {
+    "injectedOutputs": {
+      "cases": 0,
+      "passed": 0
+    },
+    "inputRejections": {
+      "cases": 0,
+      "passed": 0
+    },
+    "abstentions": {
+      "cases": 0,
+      "passed": 0
+    }
+  },
+  "subjectiveRelevance": "Not measured; human review required",
+  "liveModelTested": true,
+  "results": [
+    {
+      "case": "held-age-21",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "social-34",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 2196.298999999999,
+      "tokenUsage": {
+        "input": 1006,
+        "output": 133,
+        "total": 1139
+      },
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T22:43:35.403Z",
+      "mode": "live"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Prototype evidence summary
 
+November 26 current status: all 36/36 latest live acceptance cases pass, including nine live-eligible held-out cases. Today's selective run completed the 16 outstanding cases with zero retries and no prompt/behavior changes; prior passes were reused. Cumulative provider evidence retains 41/46 successful live evaluation attempts and five historical fallbacks. Protected local live access is enabled and a genuine authenticated website request passed (missing code 403, live request 200, mock backup verified). Human relevance remains unmeasured. See docs/live-validation.md, docs/local-live-testing.md and docs/human-review.md. Earlier incomplete/zero-request statements below are dated historical milestones, not the current activation status.
+
 Live activation follow-up: actual Gemini connectivity, profile recommendations and adaptive feedback have now been exercised. Current measured coverage, raw provider failures, fallbacks, latency and usage are in [live-validation.md](live-validation.md) and the internal Team insights view. The initial-release figures below are historical; they must not be presented as current live evidence.
 
 ## Actual live follow-up summary

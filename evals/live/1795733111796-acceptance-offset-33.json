@@ -1,0 +1,92 @@
+{
+  "scope": "acceptance",
+  "batchOffset": 33,
+  "batchLimit": 1,
+  "date": "2026-11-26T22:45:11.795Z",
+  "mode": "live",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "cases": 1,
+  "passed": 1,
+  "failed": 0,
+  "rawProviderFailures": 0,
+  "fallbacks": 0,
+  "medianLatencyMs": 1254.4259999999995,
+  "p95LatencyMs": 1254.4259999999995,
+  "safety": {
+    "injectedOutputs": {
+      "cases": 0,
+      "passed": 0
+    },
+    "inputRejections": {
+      "cases": 0,
+      "passed": 0
+    },
+    "abstentions": {
+      "cases": 0,
+      "passed": 0
+    }
+  },
+  "subjectiveRelevance": "Not measured; human review required",
+  "liveModelTested": true,
+  "results": [
+    {
+      "case": "held-age-70",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "fine-motor-10",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "gross-motor-18",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 1254.4259999999995,
+      "tokenUsage": {
+        "input": 1469,
+        "output": 137,
+        "total": 1606
+      },
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T22:45:11.793Z",
+      "mode": "live"
+    }
+  ]
+}

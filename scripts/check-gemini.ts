@@ -68,6 +68,19 @@ try {
       : "connectivity_or_timeout_failure";
 }
 report.latencyMs = performance.now() - started;
+fs.mkdirSync("evals/connectivity", { recursive: true });
+if (fs.existsSync("evals/connectivity-live.json")) {
+  const old = JSON.parse(
+    fs.readFileSync("evals/connectivity-live.json", "utf8"),
+  );
+  const path = `evals/connectivity/${old.date.replaceAll(":", "-")}.json`;
+  if (!fs.existsSync(path))
+    fs.copyFileSync("evals/connectivity-live.json", path);
+}
+fs.writeFileSync(
+  `evals/connectivity/${report.date.replaceAll(":", "-")}.json`,
+  JSON.stringify(report, null, 2) + "\n",
+);
 fs.writeFileSync(
   "evals/connectivity-live.json",
   JSON.stringify(report, null, 2) + "\n",

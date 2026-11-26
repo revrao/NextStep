@@ -12,3 +12,7 @@ All selection is labeled simulated. These screenshots are UI evidence, not Gemin
 
 ## Actual live-evaluation evidence snapshot
 `desktop-team-insights.png` and `mobile-team-insights.png` show the final internal product-team/evaluation dashboard after real Gemini calls. Current app mode is mock because technical live acceptance is incomplete. Cards distinguish 25/30 successful live attempts, five retained fallbacks, 23/36 executed acceptance cases and 20 latest passes, missing held-out coverage, measured latency/usage, and unmeasured human relevance. These are actual evaluation results, not production engagement. No credential/settings screen is captured.
+
+
+## November 26 current captures
+The Team insights desktop/mobile captures now show completed 36/36 latest live acceptance and nine live held-out cases, while retaining historical failures in cumulative rates. `desktop-live-gemini.png` is a real authenticated local website request after legitimate activation, showing the actual Live Gemini label and fictional Milo recommendations. No credential fields, headers or environment files are captured. The browser record is `evals/local-browser-live.json`; automated human relevance remains unmeasured. Earlier screenshot descriptions above are historical milestones.
