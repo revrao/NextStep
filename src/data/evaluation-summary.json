@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-26T03:43:36.611Z",
+  "mode": "mock",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "cases": 52,
+  "passed": 52,
+  "failed": 0,
+  "rawProviderFailures": 5,
+  "fallbacks": 5,
+  "medianLatencyMs": 0.10320899999999256,
+  "p95LatencyMs": 0.729582999999991,
+  "subjectiveRelevance": "Not measured; human review required",
+  "liveModelTested": false
+}

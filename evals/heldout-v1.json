@@ -1,0 +1,480 @@
+[
+  {
+    "id": "held-age-2",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 2,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true
+    }
+  },
+  {
+    "id": "held-age-9",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 9,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true
+    }
+  },
+  {
+    "id": "held-age-21",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 21,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [
+        "points",
+        "sits",
+        "walks",
+        "grasps",
+        "words",
+        "matches",
+        "turns"
+      ],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true
+    }
+  },
+  {
+    "id": "held-age-33",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 33,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [
+        "points",
+        "sits",
+        "walks",
+        "grasps",
+        "words",
+        "matches",
+        "turns"
+      ],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true
+    }
+  },
+  {
+    "id": "held-age-47",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 47,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [
+        "points",
+        "sits",
+        "walks",
+        "grasps",
+        "words",
+        "matches",
+        "turns"
+      ],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true
+    }
+  },
+  {
+    "id": "held-age-59",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 59,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [
+        "points",
+        "sits",
+        "walks",
+        "grasps",
+        "words",
+        "matches",
+        "turns"
+      ],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true
+    }
+  },
+  {
+    "id": "held-age-70",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 70,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [
+        "points",
+        "sits",
+        "walks",
+        "grasps",
+        "words",
+        "matches",
+        "turns"
+      ],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true
+    }
+  },
+  {
+    "id": "held-combined-constraints",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 27,
+      "focus": [
+        "language",
+        "social"
+      ],
+      "abilities": [],
+      "duration": 5,
+      "materials": [],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [],
+    "expected": {
+      "eligible": true,
+      "noPrerequisites": true,
+      "noMaterials": true,
+      "maxMinutes": 5
+    }
+  },
+  {
+    "id": "held-unknown-mastery",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 36,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "none"
+    },
+    "history": [
+      {
+        "id": "mastery-0",
+        "profileId": "eval-profile",
+        "activityId": "language-03",
+        "date": "2026-11-18T12:00:00.000Z",
+        "status": "completed",
+        "feedback": [
+          "mastered"
+        ],
+        "rationale": "Synthetic evaluation observation.",
+        "mode": "mock"
+      },
+      {
+        "id": "mastery-1",
+        "profileId": "eval-profile",
+        "activityId": "language-03",
+        "date": "2026-11-19T12:00:00.000Z",
+        "status": "completed",
+        "feedback": [
+          "mastered"
+        ],
+        "rationale": "Synthetic evaluation observation.",
+        "mode": "mock"
+      },
+      {
+        "id": "mastery-2",
+        "profileId": "eval-profile",
+        "activityId": "language-03",
+        "date": "2026-11-20T12:00:00.000Z",
+        "status": "completed",
+        "feedback": [
+          "mastered"
+        ],
+        "rationale": "Synthetic evaluation observation.",
+        "mode": "mock"
+      }
+    ],
+    "expected": {
+      "eligible": true,
+      "noPrerequisites": true,
+      "uncertain": true,
+      "maxDifficulty": 2
+    }
+  },
+  {
+    "id": "held-concern-stops-mastery",
+    "profile": {
+      "id": "eval-profile",
+      "nickname": "Fictional",
+      "age": 36,
+      "focus": [
+        "language",
+        "fine-motor",
+        "gross-motor",
+        "cognitive",
+        "social"
+      ],
+      "abilities": [
+        "points",
+        "sits",
+        "walks",
+        "grasps",
+        "words",
+        "matches",
+        "turns"
+      ],
+      "duration": 15,
+      "materials": [
+        "picture book",
+        "large blocks",
+        "paper",
+        "crayons",
+        "soft ball",
+        "toy animal",
+        "cups"
+      ],
+      "preferences": [
+        "stories",
+        "pretend"
+      ],
+      "fictional": true,
+      "concern": "development"
+    },
+    "history": [
+      {
+        "id": "mastery-0",
+        "profileId": "eval-profile",
+        "activityId": "language-03",
+        "date": "2026-11-18T12:00:00.000Z",
+        "status": "completed",
+        "feedback": [
+          "mastered"
+        ],
+        "rationale": "Synthetic evaluation observation.",
+        "mode": "mock"
+      },
+      {
+        "id": "mastery-1",
+        "profileId": "eval-profile",
+        "activityId": "language-03",
+        "date": "2026-11-19T12:00:00.000Z",
+        "status": "completed",
+        "feedback": [
+          "mastered"
+        ],
+        "rationale": "Synthetic evaluation observation.",
+        "mode": "mock"
+      },
+      {
+        "id": "mastery-2",
+        "profileId": "eval-profile",
+        "activityId": "language-03",
+        "date": "2026-11-20T12:00:00.000Z",
+        "status": "completed",
+        "feedback": [
+          "mastered"
+        ],
+        "rationale": "Synthetic evaluation observation.",
+        "mode": "mock"
+      }
+    ],
+    "expected": {
+      "eligible": true,
+      "abstain": true
+    }
+  }
+]

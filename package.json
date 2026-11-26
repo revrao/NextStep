@@ -1,1 +1,37 @@
-{"name":"nextstep","version":"1.0.0","private":true,"engines":{"node":">=22 <25"},"scripts":{"dev":"next dev --hostname 127.0.0.1","build":"next build","start":"next start --hostname 127.0.0.1","typecheck":"tsc --noEmit","test":"vitest run","test:e2e":"playwright test","eval:mock":"tsx scripts/evaluate.ts","eval:live":"tsx scripts/evaluate.ts --live"},"dependencies":{"next":"latest","react":"latest","react-dom":"latest","zod":"latest","lucide-react":"latest"},"devDependencies":{"@playwright/test":"latest","@tailwindcss/postcss":"latest","tailwindcss":"latest","@types/node":"latest","@types/react":"latest","@types/react-dom":"latest","typescript":"latest","vitest":"latest","tsx":"latest"}}
+{
+  "name": "nextstep",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "eval:mock": "node --import tsx scripts/evaluate.ts",
+    "eval:live": "node --import tsx scripts/evaluate.ts --live"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7",
+    "lucide-react": "1.80.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@tailwindcss/postcss": "4.3.5",
+    "tailwindcss": "4.3.5",
+    "@types/node": "26.6.11",
+    "@types/react": "19.3.3",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vitest": "5.1.2",
+    "tsx": "4.23.15"
+  },
+  "type": "module"
+}

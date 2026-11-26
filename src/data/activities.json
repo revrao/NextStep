@@ -1,0 +1,1360 @@
+[
+  {
+    "id": "language-01",
+    "title": "Hello, little listener",
+    "category": "language",
+    "minAge": 0,
+    "maxAge": 17,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "A gentle back-and-forth with familiar sounds.",
+    "steps": [
+      "Sit comfortably facing one another while the caregiver supports the baby as needed.",
+      "Say a short, gentle sound and pause.",
+      "Notice any response; copy the sound or expression without expecting an answer."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "UNICEF Parenting (idea adapted; no endorsement)",
+      "url": "https://www.unicef.org/parenting/child-care/21-learning-activities-babies-and-toddlers",
+      "accessed": "2026-11-25",
+      "review": "unreviewed",
+      "basis": "Original adaptation of Chit chat / Story time concepts. Exact steps, age bands, prerequisites, duration, and difficulty remain unvalidated NextStep assumptions; not professionally reviewed."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "language-02",
+    "title": "Picture pause",
+    "category": "language",
+    "minAge": 6,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [
+      "picture book"
+    ],
+    "format": "stories",
+    "description": "A familiar picture, a little pause, a shared discovery.",
+    "steps": [
+      "Open a sturdy picture book together.",
+      "Point to one familiar picture and name it simply.",
+      "Pause for a look, gesture, or sound. Follow their interest."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "UNICEF Parenting (idea adapted; no endorsement)",
+      "url": "https://www.unicef.org/parenting/child-care/21-learning-activities-babies-and-toddlers",
+      "accessed": "2026-11-25",
+      "review": "unreviewed",
+      "basis": "Original adaptation of Chit chat / Story time concepts. Exact steps, age bands, prerequisites, duration, and difficulty remain unvalidated NextStep assumptions; not professionally reviewed."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "language-03",
+    "title": "Animal sound stories",
+    "category": "language",
+    "minAge": 24,
+    "maxAge": 71,
+    "prerequisites": [
+      "points"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [
+      "picture book"
+    ],
+    "format": "stories",
+    "description": "Give the animals in a picture book their own little voices.",
+    "steps": [
+      "Choose a page with an animal and look at it together.",
+      "Name the animal and model its sound once.",
+      "Invite a sound or word, then wait. Offer a choice of two sounds if helpful."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "language-04",
+    "title": "One picture, one word",
+    "category": "language",
+    "minAge": 18,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [
+      "picture book"
+    ],
+    "format": "stories",
+    "description": "Explore one picture together at an easy pace.",
+    "steps": [
+      "Choose one familiar picture.",
+      "Say one word that describes it.",
+      "Let a look, gesture, or word be the response; repeat only if invited."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "language-05",
+    "title": "Pass the story",
+    "category": "language",
+    "minAge": 36,
+    "maxAge": 71,
+    "prerequisites": [
+      "words",
+      "turns"
+    ],
+    "difficulty": 3,
+    "minutes": 10,
+    "materials": [
+      "toy animal"
+    ],
+    "format": "pretend",
+    "description": "Take turns adding one small idea to a pretend story.",
+    "steps": [
+      "Set a toy animal on a clear surface.",
+      "Begin a simple story about its day.",
+      "Take turns adding one short idea, with a choice of two ideas if needed."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "language-06",
+    "title": "Name that action",
+    "category": "language",
+    "minAge": 18,
+    "maxAge": 71,
+    "prerequisites": [
+      "words"
+    ],
+    "difficulty": 2,
+    "minutes": 5,
+    "materials": [],
+    "format": "movement",
+    "description": "Pair everyday action words with gentle gestures.",
+    "steps": [
+      "Sit or stand together in a clear space.",
+      "Model a gentle hand wave and name the action.",
+      "Invite a word or gesture, then try one other action."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "language-07",
+    "title": "Echo a rhythm",
+    "category": "language",
+    "minAge": 0,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Listen and respond to quiet rhythmic sounds.",
+    "steps": [
+      "Sit together comfortably.",
+      "Make two quiet sounds with your voice.",
+      "Pause for any response and gently echo it."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "language-08",
+    "title": "Two-word toy talk",
+    "category": "language",
+    "minAge": 24,
+    "maxAge": 71,
+    "prerequisites": [
+      "words"
+    ],
+    "difficulty": 2,
+    "minutes": 5,
+    "materials": [
+      "toy animal"
+    ],
+    "format": "pretend",
+    "description": "Add a describing word to a familiar toy.",
+    "steps": [
+      "Set out a large toy animal.",
+      "Model a short phrase such as soft bear.",
+      "Invite any response and add a second simple phrase if interest continues."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-09",
+    "title": "Reach and notice",
+    "category": "fine-motor",
+    "minAge": 0,
+    "maxAge": 11,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Notice a caregiver\u2019s hand and follow a small movement.",
+    "steps": [
+      "Support the baby comfortably in your arms.",
+      "Hold your hand within easy view.",
+      "Move it slowly and pause if the baby looks away. Do not pull their arms."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-10",
+    "title": "Big block builders",
+    "category": "fine-motor",
+    "minAge": 12,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps"
+    ],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [
+      "large blocks"
+    ],
+    "format": "making",
+    "description": "Build a small creation with big, easy-to-hold blocks.",
+    "steps": [
+      "Place two large age-labeled blocks on a stable floor.",
+      "Model placing one beside the other.",
+      "Invite a grasp or placement; keep any stack low."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-11",
+    "title": "A little tower",
+    "category": "fine-motor",
+    "minAge": 24,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps",
+      "sits"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [
+      "large blocks"
+    ],
+    "format": "making",
+    "description": "Try a low tower, one block at a time.",
+    "steps": [
+      "Sit on the floor with large blocks.",
+      "Place one block on another and let the child choose the next.",
+      "Keep the tower below seated shoulder height and rebuild if desired."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-12",
+    "title": "Scribble together",
+    "category": "fine-motor",
+    "minAge": 18,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps"
+    ],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [
+      "paper",
+      "crayons"
+    ],
+    "format": "making",
+    "description": "Make big marks without needing a finished picture.",
+    "steps": [
+      "Place paper on a steady surface.",
+      "Offer large age-labeled nontoxic crayons under close supervision.",
+      "Model one broad mark, then let the child choose a mark."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-13",
+    "title": "Follow a winding line",
+    "category": "fine-motor",
+    "minAge": 36,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [
+      "paper",
+      "crayons"
+    ],
+    "format": "making",
+    "description": "Explore broad paths with a crayon.",
+    "steps": [
+      "Draw a wide winding path on paper.",
+      "Model following a small part of it slowly.",
+      "Invite free marks or following the path; precision is optional."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-14",
+    "title": "Cup companions",
+    "category": "fine-motor",
+    "minAge": 12,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps"
+    ],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [
+      "cups"
+    ],
+    "format": "making",
+    "description": "Place large empty cups beside one another.",
+    "steps": [
+      "Set two large unbreakable cups on the floor.",
+      "Move one beside the other.",
+      "Invite the child to arrange them, keeping cups away from the face."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-15",
+    "title": "Build a block pattern",
+    "category": "fine-motor",
+    "minAge": 36,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps",
+      "matches"
+    ],
+    "difficulty": 3,
+    "minutes": 10,
+    "materials": [
+      "large blocks"
+    ],
+    "format": "making",
+    "description": "Copy a short pattern with large blocks.",
+    "steps": [
+      "Lay three large blocks in a short pattern on the floor.",
+      "Talk through the order together.",
+      "Invite a matching pattern; shorten to two blocks whenever needed."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "fine-motor-16",
+    "title": "Paper fold play",
+    "category": "fine-motor",
+    "minAge": 48,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps"
+    ],
+    "difficulty": 2,
+    "minutes": 5,
+    "materials": [
+      "paper"
+    ],
+    "format": "making",
+    "description": "Explore a simple fold with caregiver help.",
+    "steps": [
+      "Place a large clean sheet on a table.",
+      "Model folding it in half.",
+      "Invite a fold or pressing the crease. Keep paper away from the mouth."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-17",
+    "title": "Gentle gesture mirror",
+    "category": "gross-motor",
+    "minAge": 0,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Share a gentle hand movement at a comfortable pace.",
+    "steps": [
+      "Support the child comfortably.",
+      "Make a slow hand gesture within view.",
+      "Pause and mirror any comfortable gesture without moving the child\u2019s limbs."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-18",
+    "title": "Roll and return",
+    "category": "gross-motor",
+    "minAge": 12,
+    "maxAge": 71,
+    "prerequisites": [
+      "sits"
+    ],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [
+      "soft ball"
+    ],
+    "format": "movement",
+    "description": "Share a slow ball roll across the floor.",
+    "steps": [
+      "Sit close together on a clear level floor.",
+      "Gently roll a large soft ball toward the child.",
+      "Invite a touch or return roll without reaching beyond balance."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-19",
+    "title": "Animal walks",
+    "category": "gross-motor",
+    "minAge": 24,
+    "maxAge": 71,
+    "prerequisites": [
+      "walks"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [],
+    "format": "movement",
+    "description": "Try a playful, gentle animal-inspired walk.",
+    "steps": [
+      "Clear a level nonslip floor space.",
+      "Model a few slow small steps like a penguin.",
+      "Walk alongside the child; avoid jumping, climbing, or forced positions."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-20",
+    "title": "Stop and sway",
+    "category": "gross-motor",
+    "minAge": 18,
+    "maxAge": 71,
+    "prerequisites": [
+      "walks"
+    ],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "movement",
+    "description": "Sway gently, then pause together.",
+    "steps": [
+      "Stand together on a clear level nonslip surface.",
+      "Model gentle swaying with both feet grounded.",
+      "Pause and invite the child to choose when to sway again."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-21",
+    "title": "Follow my footsteps",
+    "category": "gross-motor",
+    "minAge": 30,
+    "maxAge": 71,
+    "prerequisites": [
+      "walks"
+    ],
+    "difficulty": 2,
+    "minutes": 5,
+    "materials": [],
+    "format": "movement",
+    "description": "Follow a short route across an open floor.",
+    "steps": [
+      "Choose an unobstructed indoor floor area.",
+      "Take three slow steps and stop.",
+      "Invite the child to follow at their pace while you stay beside them."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-22",
+    "title": "Slow motion parade",
+    "category": "gross-motor",
+    "minAge": 36,
+    "maxAge": 71,
+    "prerequisites": [
+      "walks",
+      "turns"
+    ],
+    "difficulty": 3,
+    "minutes": 10,
+    "materials": [],
+    "format": "movement",
+    "description": "Take turns leading a very slow walking parade.",
+    "steps": [
+      "Clear a short path on a level nonslip floor.",
+      "Lead a few slow steps and a pause.",
+      "Switch leaders and follow the child\u2019s comfortable walking pace."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-23",
+    "title": "Seated stretch story",
+    "category": "gross-motor",
+    "minAge": 12,
+    "maxAge": 71,
+    "prerequisites": [
+      "sits"
+    ],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Tell a tiny story with small comfortable gestures.",
+    "steps": [
+      "Sit securely on the floor together.",
+      "Tell a story about waving hello.",
+      "Invite comfortable gestures without pushing, pulling, or stretching limbs."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "gross-motor-24",
+    "title": "Ball destination",
+    "category": "gross-motor",
+    "minAge": 48,
+    "maxAge": 71,
+    "prerequisites": [
+      "sits",
+      "turns"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [
+      "soft ball"
+    ],
+    "format": "movement",
+    "description": "Roll a soft ball toward a chosen floor spot.",
+    "steps": [
+      "Sit on a level clear floor.",
+      "Choose a nearby floor spot as the destination.",
+      "Take turns rolling gently; move the destination closer when helpful."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-25",
+    "title": "Where did my hand go?",
+    "category": "cognitive",
+    "minAge": 0,
+    "maxAge": 23,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "A simple hand reveal with lots of time to notice.",
+    "steps": [
+      "Hold the baby securely with the face and airway always clear.",
+      "Move your own hand behind your own back.",
+      "Bring it back into view and pause for any response."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-26",
+    "title": "Find the familiar picture",
+    "category": "cognitive",
+    "minAge": 12,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [
+      "picture book"
+    ],
+    "format": "stories",
+    "description": "Notice something familiar on a picture page.",
+    "steps": [
+      "Open a picture book to a simple page.",
+      "Name a familiar object and point to it.",
+      "Invite a look or gesture; show it again if helpful."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-27",
+    "title": "Color companions",
+    "category": "cognitive",
+    "minAge": 24,
+    "maxAge": 71,
+    "prerequisites": [
+      "matches"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [
+      "large blocks"
+    ],
+    "format": "making",
+    "description": "Find two large blocks that look alike.",
+    "steps": [
+      "Offer three large age-labeled blocks on the floor.",
+      "Place two similar ones together.",
+      "Invite another match and accept a different grouping."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-28",
+    "title": "What comes next?",
+    "category": "cognitive",
+    "minAge": 36,
+    "maxAge": 71,
+    "prerequisites": [
+      "matches",
+      "turns"
+    ],
+    "difficulty": 3,
+    "minutes": 10,
+    "materials": [
+      "large blocks"
+    ],
+    "format": "making",
+    "description": "Explore a short repeating pattern together.",
+    "steps": [
+      "Make a two-part repeating row with large blocks.",
+      "Describe the pattern without quizzing.",
+      "Invite the next block, offering two choices when helpful."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-29",
+    "title": "Cup hide and find",
+    "category": "cognitive",
+    "minAge": 18,
+    "maxAge": 71,
+    "prerequisites": [
+      "grasps"
+    ],
+    "difficulty": 2,
+    "minutes": 5,
+    "materials": [
+      "cups",
+      "toy animal"
+    ],
+    "format": "pretend",
+    "description": "Remember where a big toy was placed.",
+    "steps": [
+      "Use an oversized toy and large unbreakable cups.",
+      "Partly cover the toy while keeping it visible.",
+      "Invite uncovering it; never use small objects or cover a face."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-30",
+    "title": "Same or different?",
+    "category": "cognitive",
+    "minAge": 36,
+    "maxAge": 71,
+    "prerequisites": [
+      "points"
+    ],
+    "difficulty": 2,
+    "minutes": 5,
+    "materials": [
+      "picture book"
+    ],
+    "format": "stories",
+    "description": "Explore similarities in two pictures.",
+    "steps": [
+      "Choose two clear pictures in a book.",
+      "Notice one thing that is the same.",
+      "Invite a point or word about something different."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-31",
+    "title": "Copy a gentle beat",
+    "category": "cognitive",
+    "minAge": 6,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Notice one sound, then another.",
+    "steps": [
+      "Sit comfortably together.",
+      "Tap your own knee gently once and pause.",
+      "Invite any response and repeat without increasing speed or volume."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "cognitive-32",
+    "title": "Plan a tiny town",
+    "category": "cognitive",
+    "minAge": 48,
+    "maxAge": 71,
+    "prerequisites": [
+      "matches",
+      "words"
+    ],
+    "difficulty": 3,
+    "minutes": 15,
+    "materials": [
+      "large blocks"
+    ],
+    "format": "pretend",
+    "description": "Choose a place for each part of a small block town.",
+    "steps": [
+      "Arrange a few large blocks on the floor.",
+      "Choose together where a pretend house belongs.",
+      "Invite one idea at a time and rearrange freely."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-33",
+    "title": "Your smile, my smile",
+    "category": "social",
+    "minAge": 0,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Share a comfortable face-to-face moment.",
+    "steps": [
+      "Support the child in a comfortable position.",
+      "Offer a relaxed smile without demanding eye contact.",
+      "Respond warmly to any gesture and stop when they turn away."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "UNICEF Parenting (idea adapted; no endorsement)",
+      "url": "https://www.unicef.org/parenting/child-development/baby-tips",
+      "accessed": "2026-11-25",
+      "review": "unreviewed",
+      "basis": "Original adaptation of responsive smiling / waving concepts. Exact steps, age bands, prerequisites, duration, and difficulty remain unvalidated NextStep assumptions; not professionally reviewed."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-34",
+    "title": "Teddy takes a turn",
+    "category": "social",
+    "minAge": 18,
+    "maxAge": 71,
+    "prerequisites": [
+      "turns"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [
+      "toy animal"
+    ],
+    "format": "pretend",
+    "description": "Practice little turns with a familiar toy friend.",
+    "steps": [
+      "Sit together with a large toy animal.",
+      "Offer the toy a pretend turn waving hello.",
+      "Invite the child\u2019s turn, with no pressure to join."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-35",
+    "title": "Hello and goodbye",
+    "category": "social",
+    "minAge": 6,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Make a familiar greeting your own.",
+    "steps": [
+      "Sit together comfortably.",
+      "Model a gentle wave and hello.",
+      "Accept a look, sound, or gesture as a reply; finish with goodbye."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "UNICEF Parenting (idea adapted; no endorsement)",
+      "url": "https://www.unicef.org/parenting/child-development/baby-tips",
+      "accessed": "2026-11-25",
+      "review": "unreviewed",
+      "basis": "Original adaptation of responsive smiling / waving concepts. Exact steps, age bands, prerequisites, duration, and difficulty remain unvalidated NextStep assumptions; not professionally reviewed."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-36",
+    "title": "Feelings in a story",
+    "category": "social",
+    "minAge": 30,
+    "maxAge": 71,
+    "prerequisites": [
+      "points"
+    ],
+    "difficulty": 2,
+    "minutes": 10,
+    "materials": [
+      "picture book"
+    ],
+    "format": "stories",
+    "description": "Notice a story character\u2019s expression together.",
+    "steps": [
+      "Choose a calm picture in a book.",
+      "Name a possible feeling using might feel.",
+      "Invite any observation without assuming what the child feels."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-37",
+    "title": "Build it together",
+    "category": "social",
+    "minAge": 36,
+    "maxAge": 71,
+    "prerequisites": [
+      "turns",
+      "grasps"
+    ],
+    "difficulty": 3,
+    "minutes": 10,
+    "materials": [
+      "large blocks"
+    ],
+    "format": "making",
+    "description": "Make a shared low block creation, taking small turns.",
+    "steps": [
+      "Sit on the floor with a few large blocks.",
+      "Place one block and offer the next turn.",
+      "Accept passing a turn and keep structures low."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-38",
+    "title": "A choice for teddy",
+    "category": "social",
+    "minAge": 24,
+    "maxAge": 71,
+    "prerequisites": [
+      "words"
+    ],
+    "difficulty": 2,
+    "minutes": 5,
+    "materials": [
+      "toy animal"
+    ],
+    "format": "pretend",
+    "description": "Offer a pretend friend two simple choices.",
+    "steps": [
+      "Set out a large toy animal.",
+      "Ask whether it might wave or rest.",
+      "Model accepting either choice and invite the child\u2019s idea."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-39",
+    "title": "Together time",
+    "category": "social",
+    "minAge": 0,
+    "maxAge": 71,
+    "prerequisites": [],
+    "difficulty": 1,
+    "minutes": 5,
+    "materials": [],
+    "format": "quiet",
+    "description": "Follow a child\u2019s attention for one quiet moment.",
+    "steps": [
+      "Settle in a comfortable supported position together.",
+      "Notice what captures the child\u2019s attention.",
+      "Respond with a gentle word or gesture, then pause."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  },
+  {
+    "id": "social-40",
+    "title": "Tell me your idea",
+    "category": "social",
+    "minAge": 48,
+    "maxAge": 71,
+    "prerequisites": [
+      "words",
+      "turns"
+    ],
+    "difficulty": 3,
+    "minutes": 10,
+    "materials": [
+      "toy animal"
+    ],
+    "format": "pretend",
+    "description": "Take turns choosing what a pretend friend does next.",
+    "steps": [
+      "Choose a large toy animal for a short pretend scene.",
+      "Offer one everyday idea, such as waving hello.",
+      "Invite a different idea and take turns choosing."
+    ],
+    "supervision": "An attentive adult stays within reach throughout. Follow comfort and interest; stop at any sign of distress.",
+    "safetyExclusions": [
+      "No small parts, food, water, cords, climbing, or covered airways.",
+      "Use only intact materials labeled appropriate for the fictional age."
+    ],
+    "source": {
+      "organization": "NextStep synthetic demonstration fixture",
+      "url": null,
+      "accessed": null,
+      "review": "unreviewed",
+      "basis": "Original invented scenario; age bands, prerequisites, and difficulty are implementation assumptions, not clinically validated guidance."
+    },
+    "version": "library-v1"
+  }
+]
