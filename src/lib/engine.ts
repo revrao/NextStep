@@ -1,3 +1,5 @@
+import { ZodError } from "zod";
+import { ProviderError, type TokenUsage } from "./provider-error";
 import { library, activityById } from "./library";
 import {
   requestSchema,
@@ -180,7 +182,7 @@ export interface Provider {
     p: Profile,
     h: History[],
     candidates: Activity[],
-  ): Promise<{ output: unknown; usage?: { input: number; output: number } }>;
+  ): Promise<{ output: unknown; usage?: TokenUsage; modelVersion?: string }>;
 }
 export async function recommend(
   input: unknown,
@@ -224,28 +226,39 @@ export async function recommend(
     mode: Result["mode"] = "mock",
     message = "Simulated recommendations · no AI request was made.",
     usage: Result["usage"],
-    providerFailure: string | undefined;
+    providerFailure: string | undefined,
+    providerModelVersion: string | undefined;
   if (provider) {
     try {
       const out = await provider.select(p, h, candidates);
       usage = out.usage;
+      providerModelVersion = out.modelVersion;
       selections = validateSelections(out.output, p, h);
       mode = "live";
       message =
         "Live Gemini ranking · instructions and explanations remain library-grounded.";
     } catch (error) {
       mode = "fallback";
+      if (error instanceof ProviderError) usage = error.usage ?? usage;
       providerFailure =
-        error instanceof Error &&
-        [
-          "duplicate_ids",
-          "ineligible_id",
-          "unsupported_reason",
-          "missing_uncertainty",
-          "missed_simplification",
-        ].includes(error.message)
-          ? error.message
-          : "provider_or_schema_failure";
+        error instanceof ProviderError
+          ? error.code
+          : error instanceof ZodError
+            ? "schema_validation_failed"
+            : error instanceof Error && error.name === "TimeoutError"
+              ? "provider_timeout"
+              : error instanceof TypeError
+                ? "provider_network_failure"
+                : error instanceof Error &&
+                    [
+                      "duplicate_ids",
+                      "ineligible_id",
+                      "unsupported_reason",
+                      "missing_uncertainty",
+                      "missed_simplification",
+                    ].includes(error.message)
+                  ? error.message
+                  : "provider_or_schema_failure";
       message =
         "Live AI was unavailable or its response failed validation. Showing a deterministic, non-AI fallback.";
     }
@@ -261,6 +274,7 @@ export async function recommend(
     message,
     usage,
     providerFailure,
+    providerModelVersion,
     latencyMs: performance.now() - started,
   };
 }

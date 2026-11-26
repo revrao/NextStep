@@ -1,6 +1,8 @@
 # Validation record · November 25, 2026 (America/Los_Angeles)
 
-## Actual checks so far
+Current real-provider evidence is maintained in [live-validation.md](live-validation.md). Earlier zero-request statements below describe the initial release and Phase 1 only.
+
+## Initial prototype checks (before live activation)
 - Dependency installation completed; packages pinned and lockfile committed. npm audit reported zero vulnerabilities at installation time.
 - Production Next.js webpack build passed; root page and dynamic server recommendation route generated successfully. No static export.
 - TypeScript check passed.

@@ -28,7 +28,16 @@ const result = z.object({
   message: z.string(),
   latencyMs: z.number(),
   model: z.string(),
-  usage: z.object({ input: z.number(), output: z.number() }).optional(),
+  usage: z
+    .object({
+      input: z.number(),
+      output: z.number(),
+      total: z.number().optional(),
+      thinking: z.number().optional(),
+      cached: z.number().optional(),
+    })
+    .optional(),
+  providerModelVersion: z.string().optional(),
   providerFailure: z.string().optional(),
   versions: z.object({
     prompt: z.string(),

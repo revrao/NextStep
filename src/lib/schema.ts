@@ -165,7 +165,14 @@ export type Result = {
   message: string;
   latencyMs: number;
   model: string;
-  usage?: { input: number; output: number };
+  usage?: {
+    input: number;
+    output: number;
+    total?: number;
+    thinking?: number;
+    cached?: number;
+  };
+  providerModelVersion?: string;
   providerFailure?: string;
   versions: { prompt: string; schema: string; rules: string; library: string };
 };

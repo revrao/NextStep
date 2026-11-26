@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-26T05:24:44.815Z",
+  "model": "gemini-3.5-flash-lite",
+  "mode": "live-connectivity",
+  "freeTier": "Owner confirmed unbilled Free tier; no billing changes made",
+  "connected": true,
+  "modelHttpStatus": 200,
+  "generationHttpStatus": 200,
+  "tokenUsage": {
+    "promptTokenCount": 5,
+    "candidatesTokenCount": 1,
+    "totalTokenCount": 6,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "latencyMs": 1334.049333
+}

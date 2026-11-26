@@ -13,7 +13,10 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "eval:mock": "node --env-file-if-exists=.env.local --import tsx scripts/evaluate.ts",
-    "eval:live": "node --env-file-if-exists=.env.local --import tsx scripts/evaluate.ts --live"
+    "eval:live": "node --env-file-if-exists=.env.local --import tsx scripts/evaluate.ts --live",
+    "ai:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-gemini.ts",
+    "eval:summary": "node --env-file-if-exists=.env.local --import tsx scripts/summarize-evaluations.ts",
+    "eval:feedback": "node --env-file-if-exists=.env.local --import tsx scripts/check-live-feedback.ts"
   },
   "dependencies": {
     "lucide-react": "1.80.0",

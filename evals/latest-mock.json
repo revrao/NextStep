@@ -1,7 +1,8 @@
 {
+  "scope": "acceptance",
   "batchOffset": 0,
   "batchLimit": null,
-  "date": "2026-11-26T03:48:43.189Z",
+  "date": "2026-11-26T05:30:34.825Z",
   "mode": "mock",
   "versions": {
     "prompt": "prompt-v1",
@@ -14,8 +15,22 @@
   "failed": 0,
   "rawProviderFailures": 5,
   "fallbacks": 5,
-  "medianLatencyMs": 0.11679099999997788,
-  "p95LatencyMs": 1.0573329999999999,
+  "medianLatencyMs": 0.1059579999999869,
+  "p95LatencyMs": 0.7281669999999849,
+  "safety": {
+    "injectedOutputs": {
+      "cases": 5,
+      "passed": 5
+    },
+    "inputRejections": {
+      "cases": 7,
+      "passed": 7
+    },
+    "abstentions": {
+      "cases": 4,
+      "passed": 4
+    }
+  },
   "subjectiveRelevance": "Not measured; human review required",
   "liveModelTested": false,
   "results": [
@@ -52,6 +67,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -61,10 +77,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 9.95670800000002,
+      "latencyMs": 8.803541999999993,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.179Z",
+      "executionDate": "2026-11-26T05:30:34.816Z",
       "mode": "mock"
     },
     {
@@ -100,6 +117,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -109,10 +127,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.12883399999998346,
+      "latencyMs": 0.13512499999998795,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.180Z",
+      "executionDate": "2026-11-26T05:30:34.817Z",
       "mode": "mock"
     },
     {
@@ -148,6 +167,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -157,10 +177,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.11679099999997788,
+      "latencyMs": 0.12945799999999963,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.180Z",
+      "executionDate": "2026-11-26T05:30:34.817Z",
       "mode": "mock"
     },
     {
@@ -196,6 +217,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -205,10 +227,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.09125000000000227,
+      "latencyMs": 0.10291699999999082,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.180Z",
+      "executionDate": "2026-11-26T05:30:34.817Z",
       "mode": "mock"
     },
     {
@@ -244,6 +267,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -253,10 +277,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.14575000000002092,
+      "latencyMs": 0.20966699999999605,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.180Z",
+      "executionDate": "2026-11-26T05:30:34.818Z",
       "mode": "mock"
     },
     {
@@ -292,6 +317,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -301,10 +327,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.10104200000000674,
+      "latencyMs": 0.1059579999999869,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.180Z",
+      "executionDate": "2026-11-26T05:30:34.818Z",
       "mode": "mock"
     },
     {
@@ -340,6 +367,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -349,10 +377,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.11949999999998795,
+      "latencyMs": 0.1252500000000225,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.181Z",
+      "executionDate": "2026-11-26T05:30:34.818Z",
       "mode": "mock"
     },
     {
@@ -388,6 +417,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -397,10 +427,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.21008399999999483,
+      "latencyMs": 0.16258300000001213,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.181Z",
+      "executionDate": "2026-11-26T05:30:34.818Z",
       "mode": "mock"
     },
     {
@@ -436,6 +467,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -445,10 +477,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.180499999999995,
+      "latencyMs": 0.164874999999995,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.181Z",
+      "executionDate": "2026-11-26T05:30:34.818Z",
       "mode": "mock"
     },
     {
@@ -484,6 +517,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -493,10 +527,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.24529200000000628,
+      "latencyMs": 0.11420899999998824,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.181Z",
+      "executionDate": "2026-11-26T05:30:34.818Z",
       "mode": "mock"
     },
     {
@@ -532,6 +567,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -541,10 +577,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.13458299999999213,
+      "latencyMs": 0.10116700000000378,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.181Z",
+      "executionDate": "2026-11-26T05:30:34.818Z",
       "mode": "mock"
     },
     {
@@ -580,6 +617,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -589,10 +627,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.12487500000000296,
+      "latencyMs": 0.11145799999999895,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.181Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -607,6 +646,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": true,
+      "resultMode": "rejected",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -616,10 +656,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.36120900000000233,
+      "latencyMs": 0.3452500000000214,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -634,6 +675,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": true,
+      "resultMode": "rejected",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -643,10 +685,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.06387500000002433,
+      "latencyMs": 0.05391700000001265,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -661,6 +704,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": true,
+      "resultMode": "rejected",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -670,10 +714,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.10912500000000591,
+      "latencyMs": 0.10333299999999213,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -710,6 +755,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -719,10 +765,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.13833300000001714,
+      "latencyMs": 0.0993750000000091,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -759,6 +806,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -768,10 +816,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07537499999997976,
+      "latencyMs": 0.050083000000000766,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -808,6 +857,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -817,10 +867,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.047457999999977574,
+      "latencyMs": 0.05287500000000023,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -857,6 +908,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -866,10 +918,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.04254099999999994,
+      "latencyMs": 0.04104099999997857,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -906,6 +959,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -915,10 +969,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.06558300000000372,
+      "latencyMs": 0.055625000000020464,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.819Z",
       "mode": "mock"
     },
     {
@@ -956,6 +1011,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -965,10 +1021,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08379200000001674,
+      "latencyMs": 0.08829200000002402,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.182Z",
+      "executionDate": "2026-11-26T05:30:34.820Z",
       "mode": "mock"
     },
     {
@@ -1005,6 +1062,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1014,10 +1072,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 1.3944999999999936,
+      "latencyMs": 0.06112500000000409,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.184Z",
+      "executionDate": "2026-11-26T05:30:34.820Z",
       "mode": "mock"
     },
     {
@@ -1054,6 +1113,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1063,10 +1123,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.05779100000000881,
+      "latencyMs": 0.7281669999999849,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.184Z",
+      "executionDate": "2026-11-26T05:30:34.820Z",
       "mode": "mock"
     },
     {
@@ -1107,6 +1168,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1116,10 +1178,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 1.0573329999999999,
+      "latencyMs": 1.0909580000000005,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.185Z",
+      "executionDate": "2026-11-26T05:30:34.822Z",
       "mode": "mock"
     },
     {
@@ -1156,6 +1219,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1165,10 +1229,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.1591669999999965,
+      "latencyMs": 0.21825000000001182,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.185Z",
+      "executionDate": "2026-11-26T05:30:34.822Z",
       "mode": "mock"
     },
     {
@@ -1205,6 +1270,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1214,10 +1280,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.18241699999998673,
+      "latencyMs": 0.21870899999998983,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.185Z",
+      "executionDate": "2026-11-26T05:30:34.822Z",
       "mode": "mock"
     },
     {
@@ -1255,6 +1322,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1264,10 +1332,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.15579199999999105,
+      "latencyMs": 0.20137499999998454,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.185Z",
+      "executionDate": "2026-11-26T05:30:34.822Z",
       "mode": "mock"
     },
     {
@@ -1304,6 +1373,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1313,10 +1383,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.23654099999998834,
+      "latencyMs": 0.211166999999989,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.186Z",
+      "executionDate": "2026-11-26T05:30:34.822Z",
       "mode": "mock"
     },
     {
@@ -1353,6 +1424,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1362,10 +1434,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.3317920000000072,
+      "latencyMs": 0.29974999999998886,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.186Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1402,6 +1475,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1411,10 +1485,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.271665999999982,
+      "latencyMs": 0.2190830000000119,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.186Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1430,6 +1505,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1439,10 +1515,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.1460830000000044,
+      "latencyMs": 0.038207999999997355,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.186Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1458,6 +1535,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1467,10 +1545,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.026332999999993945,
+      "latencyMs": 0.025999999999982037,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.187Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1485,6 +1564,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1494,10 +1574,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.0363749999999925,
+      "latencyMs": 0.033125000000012506,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.187Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1512,6 +1593,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": true,
+      "resultMode": "rejected",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1521,10 +1603,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.1875,
+      "latencyMs": 0.07541700000001583,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.187Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1539,6 +1622,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": true,
+      "resultMode": "rejected",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1548,10 +1632,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.127207999999996,
+      "latencyMs": 0.1307909999999879,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.187Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1566,6 +1651,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": true,
+      "resultMode": "rejected",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1575,10 +1661,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.09787499999998772,
+      "latencyMs": 0.11291700000001015,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.187Z",
+      "executionDate": "2026-11-26T05:30:34.823Z",
       "mode": "mock"
     },
     {
@@ -1593,6 +1680,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": true,
+      "resultMode": "rejected",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1602,10 +1690,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08087499999999181,
+      "latencyMs": 0.08795799999998621,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.187Z",
+      "executionDate": "2026-11-26T05:30:34.824Z",
       "mode": "mock"
     },
     {
@@ -1642,6 +1731,7 @@
       "failureCategory": null,
       "rawProviderFailure": "ineligible_id",
       "guardrailPrevented": true,
+      "resultMode": "fallback",
       "fallback": true,
       "model": "adversarial-fixture",
       "versions": {
@@ -1651,10 +1741,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.5112919999999974,
+      "latencyMs": 0.49729099999998994,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.824Z",
       "mode": "mock"
     },
     {
@@ -1691,6 +1782,7 @@
       "failureCategory": null,
       "rawProviderFailure": "duplicate_ids",
       "guardrailPrevented": true,
+      "resultMode": "fallback",
       "fallback": true,
       "model": "adversarial-fixture",
       "versions": {
@@ -1700,10 +1792,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.12466699999998809,
+      "latencyMs": 0.12391599999997993,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.824Z",
       "mode": "mock"
     },
     {
@@ -1740,6 +1833,7 @@
       "failureCategory": null,
       "rawProviderFailure": "unsupported_reason",
       "guardrailPrevented": true,
+      "resultMode": "fallback",
       "fallback": true,
       "model": "adversarial-fixture",
       "versions": {
@@ -1749,10 +1843,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.1094579999999894,
+      "latencyMs": 0.1130409999999813,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.824Z",
       "mode": "mock"
     },
     {
@@ -1787,8 +1882,9 @@
       ],
       "pass": true,
       "failureCategory": null,
-      "rawProviderFailure": "provider_or_schema_failure",
+      "rawProviderFailure": "schema_validation_failed",
       "guardrailPrevented": true,
+      "resultMode": "fallback",
       "fallback": true,
       "model": "adversarial-fixture",
       "versions": {
@@ -1798,10 +1894,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.16454099999998562,
+      "latencyMs": 0.1480410000000063,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.824Z",
       "mode": "mock"
     },
     {
@@ -1836,8 +1933,9 @@
       ],
       "pass": true,
       "failureCategory": null,
-      "rawProviderFailure": "provider_or_schema_failure",
+      "rawProviderFailure": "schema_validation_failed",
       "guardrailPrevented": true,
+      "resultMode": "fallback",
       "fallback": true,
       "model": "adversarial-fixture",
       "versions": {
@@ -1847,10 +1945,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.10762500000001296,
+      "latencyMs": 0.1082919999999774,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -1886,6 +1985,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1895,10 +1995,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.05029099999998721,
+      "latencyMs": 0.04537499999997863,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -1934,6 +2035,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1943,10 +2045,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.05087499999999068,
+      "latencyMs": 0.05120900000000006,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -1982,6 +2085,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -1991,10 +2095,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07204200000001038,
+      "latencyMs": 0.06845799999999258,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -2030,6 +2135,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -2039,10 +2145,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07579099999998107,
+      "latencyMs": 0.06812499999998067,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -2078,6 +2185,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -2087,10 +2195,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07987500000001546,
+      "latencyMs": 0.07216600000000994,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -2126,6 +2235,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -2135,10 +2245,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08724999999998317,
+      "latencyMs": 0.0918749999999875,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.188Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -2174,6 +2285,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -2183,10 +2295,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.0998339999999871,
+      "latencyMs": 0.084083000000021,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.189Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -2225,6 +2338,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -2234,10 +2348,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.033999999999991815,
+      "latencyMs": 0.03916599999999448,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.189Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -2276,6 +2391,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -2285,10 +2401,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.11283300000002328,
+      "latencyMs": 0.10550000000000637,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.189Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     },
     {
@@ -2303,6 +2420,7 @@
       "failureCategory": null,
       "rawProviderFailure": null,
       "guardrailPrevented": false,
+      "resultMode": "mock",
       "fallback": false,
       "model": "deterministic-v1",
       "versions": {
@@ -2312,10 +2430,11 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07908300000002555,
+      "latencyMs": 0.08441700000000196,
       "tokenUsage": null,
+      "providerModelVersion": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:48:43.189Z",
+      "executionDate": "2026-11-26T05:30:34.825Z",
       "mode": "mock"
     }
   ]

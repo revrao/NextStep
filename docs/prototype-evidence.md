@@ -1,5 +1,7 @@
 # Prototype evidence summary
 
+Live activation follow-up: actual Gemini connectivity, profile recommendations and adaptive feedback have now been exercised. Current measured coverage, raw provider failures, fallbacks, latency and usage are in [live-validation.md](live-validation.md) and the internal Team insights view. The initial-release figures below are historical; they must not be presented as current live evidence.
+
 ## Hypothesis and implemented stories
 Caregivers continuing at-home practice after professional counseling may return more often when recommendations reflect what they noticed last time. The implementation demonstrates this mechanism, not retention or clinical effectiveness.
 
@@ -17,7 +19,7 @@ The acceptance specification was created before the engine. Fifty-two synthetic 
 
 Twenty-five unit/integration tests cover eligibility across all month values, schema/storage validation, cross-profile isolation, structured transport success, quota/server error handling, blocked/truncated/malformed/timeout behavior, and API access gates. See `docs/validation.md` for the final production/browser checks and exact measured latency.
 
-**Actual Gemini API evaluation: not executed; no key supplied.** No live latency, token usage, cost verification or subjective personalization success rate is claimed. Mock rule pass rates do not establish Gemini quality, real-world safety, or the target 90% human-reviewed relevance. Prototype targets remain targets.
+**At the initial mock-only release, actual Gemini API evaluation was not executed; no key had been supplied.** For current measured latency and token usage, see the live follow-up. Independent billing verification and human-rated personalization remain unmeasured. Mock rule pass rates do not establish Gemini quality, real-world safety, or the target 90% human-reviewed relevance. Prototype targets remain targets.
 
 ## Observed failures and guardrails
 An initial browser run exposed legitimate requests being rejected because of a Next.js internal URL/original host mismatch; the corrected comparison and regression test now preserve same-origin access. Turbopack hit a local sandbox worker-binding limitation; webpack built successfully. Deliberately malformed/invented/duplicate/unsupported model selections were rejected, confirming the tested guardrail behavior. HTTP failures and timeouts were tested with network-free transport fixtures, not actual provider outages.

@@ -1,4 +1,7 @@
 import fs from "node:fs";
+import { setTimeout as delay } from "node:timers/promises";
+import { outputFailureCodes } from "../src/lib/provider-error";
+import { samples } from "../src/data/profiles";
 import {
   recommend,
   eligible,
@@ -19,14 +22,27 @@ if (live && !process.env.GEMINI_API_KEY) {
 }
 const batchArg = process.argv.find((a) => a.startsWith("--limit="));
 const limit = batchArg ? Number(batchArg.split("=")[1]) : live ? 3 : Infinity;
-if (!(limit > 0)) {
-  throw Error("Use a positive --limit.");
+if (!(limit > 0) || (live && (!Number.isInteger(limit) || limit > 3))) {
+  throw Error("Use a positive limit; live batches are capped at 3 requests.");
 }
 const model = process.env.GEMINI_MODEL ?? "gemini-3.5-flash-lite";
-const items = [
-  ...development.map((c) => ({ ...c, split: "development" })),
-  ...heldout.map((c) => ({ ...c, split: "heldout" })),
-];
+const sampleCases = samples.map((profile) => ({
+  id: `sample-${profile.nickname.toLowerCase()}`,
+  profile,
+  history: [],
+  expected: { eligible: true },
+  split: "sample-profiles",
+}));
+const scope = process.argv.includes("--samples")
+  ? "sample-profiles"
+  : "acceptance";
+const items =
+  scope === "sample-profiles"
+    ? sampleCases
+    : [
+        ...development.map((c) => ({ ...c, split: "development" })),
+        ...heldout.map((c) => ({ ...c, split: "heldout" })),
+      ];
 const offsetArg = process.argv.find((a) => a.startsWith("--offset="));
 const offset = offsetArg ? Number(offsetArg.split("=")[1]) : 0;
 if (!Number.isInteger(offset) || offset < 0)
@@ -40,6 +56,10 @@ for (const item of items) {
   if (live && (c.rawOutput !== undefined || e.reject || e.abstain)) continue;
   if (live && eligibleIndex++ < offset) continue;
   if (live && liveCalls >= limit) break;
+  if (live) {
+    console.log(`Waiting 22 seconds before bounded live case ${c.id}…`);
+    await delay(22000);
+  }
   const started = performance.now();
   let result: Result | undefined;
   let failure: string | undefined;
@@ -167,17 +187,34 @@ for (const item of items) {
     pass: !failure,
     failureCategory: failure ?? null,
     rawProviderFailure: result?.providerFailure ?? null,
-    guardrailPrevented: !!result?.providerFailure || !!e.reject,
+    guardrailPrevented:
+      (validationRejected && !!e.reject) ||
+      (!!result?.providerFailure &&
+        outputFailureCodes.has(result.providerFailure)),
+    resultMode: result?.mode ?? "rejected",
     fallback: result?.mode === "fallback",
     model: live ? model : (result?.model ?? "deterministic-v1"),
     versions,
     caseVersion: "cases-v1",
     latencyMs: performance.now() - started,
     tokenUsage: result?.usage ?? null,
-    cost: live ? "Unverified; free-tier project required" : "$0 · local only",
+    providerModelVersion: result?.providerModelVersion ?? null,
+    cost: live
+      ? "$0 estimated · owner-confirmed unbilled Free tier"
+      : "$0 · local only",
     executionDate: new Date().toISOString(),
     mode: live ? "live" : "mock",
   });
+  console.log(
+    JSON.stringify({
+      case: c.id,
+      pass: !failure,
+      mode: result?.mode,
+      failure: failure ?? null,
+      providerFailure: result?.providerFailure ?? null,
+      latencyMs: result?.latencyMs,
+    }),
+  );
   if (live && failure) {
     console.error(
       "Live acceptance failure. Keep LIVE_EVAL_PASSED=false; remediate and retest.",
@@ -187,6 +224,7 @@ for (const item of items) {
 }
 const latency = rows.map((r) => r.latencyMs).sort((a, b) => a - b);
 const report = {
+  scope,
   batchOffset: offset,
   batchLimit: Number.isFinite(limit) ? limit : null,
   date: new Date().toISOString(),
@@ -202,8 +240,23 @@ const report = {
     latency[
       Math.min(latency.length - 1, Math.ceil(latency.length * 0.95) - 1)
     ] ?? null,
+  safety: {
+    injectedOutputs: {
+      cases: rows.filter((r) => r.expected.fallback).length,
+      passed: rows.filter((r) => r.expected.fallback && r.pass && r.fallback)
+        .length,
+    },
+    inputRejections: {
+      cases: rows.filter((r) => r.expected.reject).length,
+      passed: rows.filter((r) => r.expected.reject && r.pass).length,
+    },
+    abstentions: {
+      cases: rows.filter((r) => r.expected.abstain).length,
+      passed: rows.filter((r) => r.expected.abstain && r.pass).length,
+    },
+  },
   subjectiveRelevance: "Not measured; human review required",
-  liveModelTested: live,
+  liveModelTested: live && liveCalls > 0,
   results: rows,
 };
 fs.writeFileSync(
@@ -213,7 +266,7 @@ fs.writeFileSync(
 if (live) {
   fs.mkdirSync("evals/live", { recursive: true });
   fs.writeFileSync(
-    `evals/live/${Date.now()}-offset-${offset}.json`,
+    `evals/live/${Date.now()}-${scope}-offset-${offset}.json`,
     JSON.stringify(report, null, 2) + "\n",
   );
 }

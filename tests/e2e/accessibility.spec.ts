@@ -32,4 +32,8 @@ test("caregiver screens meet automated WCAG AA checks", async ({ page }) => {
     .click();
   await check();
   await page.keyboard.press("Escape");
+  const menu = page.getByRole("button", { name: "Toggle navigation" });
+  if (await menu.isVisible()) await menu.click();
+  await page.getByRole("link", { name: "Team insights", exact: true }).click();
+  await check();
 });

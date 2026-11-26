@@ -1,0 +1,203 @@
+{
+  "scope": "acceptance",
+  "batchOffset": 12,
+  "batchLimit": 3,
+  "date": "2026-11-26T05:37:02.157Z",
+  "mode": "live",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "cases": 3,
+  "passed": 3,
+  "failed": 0,
+  "rawProviderFailures": 0,
+  "fallbacks": 0,
+  "medianLatencyMs": 2396.666707999997,
+  "p95LatencyMs": 2622.9679999999935,
+  "safety": {
+    "injectedOutputs": {
+      "cases": 0,
+      "passed": 0
+    },
+    "inputRejections": {
+      "cases": 0,
+      "passed": 0
+    },
+    "abstentions": {
+      "cases": 0,
+      "passed": 0
+    }
+  },
+  "subjectiveRelevance": "Not measured; human review required",
+  "liveModelTested": true,
+  "results": [
+    {
+      "case": "focus-language",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "language"
+      },
+      "actual": [
+        {
+          "activityId": "language-06",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 1379.8276670000014,
+      "tokenUsage": {
+        "input": 450,
+        "output": 133,
+        "total": 583
+      },
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:36:13.133Z",
+      "mode": "live"
+    },
+    {
+      "case": "focus-fine-motor",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "fine-motor"
+      },
+      "actual": [
+        {
+          "activityId": "fine-motor-10",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "fine-motor-11",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "fine-motor-12",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 2396.666707999997,
+      "tokenUsage": {
+        "input": 431,
+        "output": 139,
+        "total": 570
+      },
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:36:37.532Z",
+      "mode": "live"
+    },
+    {
+      "case": "focus-gross-motor",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "gross-motor"
+      },
+      "actual": [
+        {
+          "activityId": "gross-motor-17",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "gross-motor-18",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "gross-motor-19",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 2622.9679999999935,
+      "tokenUsage": {
+        "input": 473,
+        "output": 139,
+        "total": 612
+      },
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:37:02.157Z",
+      "mode": "live"
+    }
+  ]
+}

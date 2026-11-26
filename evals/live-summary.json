@@ -1,0 +1,181 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "updatedAt": "2026-11-26T05:37:02.157Z",
+  "attempts": 22,
+  "successful": 20,
+  "acceptedResponses": 20,
+  "successRate": 0.9090909090909091,
+  "fallbacks": 2,
+  "fallbackRate": 0.09090909090909091,
+  "transportFailures": 2,
+  "invalidOutputsPrevented": 0,
+  "medianLatencyMs": 1586.1474579999995,
+  "p95LatencyMs": 3354.533540999997,
+  "latencySamples": 22,
+  "successfulMedianLatencyMs": 1586.1474579999995,
+  "successfulP95LatencyMs": 2622.9679999999935,
+  "tokenUsage": {
+    "input": 17465,
+    "output": 2327,
+    "thinking": 0,
+    "total": 19792,
+    "requestsWithUsage": 20
+  },
+  "estimatedCostUsd": 0,
+  "costBasis": "Owner-confirmed unbilled Free tier; estimate, not a billing audit",
+  "coverage": {
+    "expected": 36,
+    "executed": 15,
+    "passed": 15,
+    "missing": [
+      "focus-cognitive",
+      "focus-social",
+      "unknown-abilities",
+      "no-materials",
+      "five-minutes",
+      "struggled",
+      "enjoyed-and-struggled",
+      "enjoyed",
+      "not-interested",
+      "single-mastery",
+      "supported-mastery",
+      "same-day-mastery",
+      "held-age-2",
+      "held-age-9",
+      "held-age-21",
+      "held-age-33",
+      "held-age-47",
+      "held-age-59",
+      "held-age-70",
+      "held-combined-constraints",
+      "held-unknown-mastery"
+    ],
+    "failing": [],
+    "heldoutExecuted": 0
+  },
+  "samples": {
+    "attempts": 3,
+    "passed": 3,
+    "profiles": [
+      "sample-milo",
+      "sample-luna",
+      "sample-robin"
+    ]
+  },
+  "feedbackJourney": {
+    "attempts": 2,
+    "passed": 2
+  },
+  "providerModelVersions": [
+    "gemini-3.5-flash-lite"
+  ],
+  "recentCases": [
+    {
+      "case": "focus-gross-motor",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 2622.9679999999935,
+      "failure": null
+    },
+    {
+      "case": "focus-fine-motor",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 2396.666707999997,
+      "failure": null
+    },
+    {
+      "case": "focus-language",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1379.8276670000014,
+      "failure": null
+    },
+    {
+      "case": "age-71",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1305.4287909999985,
+      "failure": null
+    },
+    {
+      "case": "age-60",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 2402.988666999998,
+      "failure": null
+    },
+    {
+      "case": "age-48",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1468.7221250000002,
+      "failure": null
+    },
+    {
+      "case": "age-36",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1811.6266669999895,
+      "failure": null
+    },
+    {
+      "case": "age-35",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 2035.1248329999944,
+      "failure": null
+    },
+    {
+      "case": "age-24",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1324.6991669999989,
+      "failure": null
+    },
+    {
+      "case": "age-18",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1389.4391250000044,
+      "failure": null
+    },
+    {
+      "case": "age-12",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1370.7868330000056,
+      "failure": null
+    },
+    {
+      "case": "age-11",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1589.411082999999,
+      "failure": null
+    }
+  ],
+  "humanReviewedRelevance": {
+    "status": "Not measured",
+    "reviewed": 0
+  },
+  "acceptanceReady": false
+}

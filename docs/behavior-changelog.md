@@ -11,3 +11,11 @@ Browser QA identified an internal Next.js URL versus original Host discrepancy i
 
 ## Improvement process
 Caregiver usage → structured feedback → recommendation failure identification → new development evaluation cases → reviewed rule/prompt changes → re-evaluation, including untouched held-out coverage. This describes a proposed human-reviewed data flywheel. No automatic learning, prompt rewriting, or data upload is implemented. Refresh held-out cases independently when an evaluated version is promoted or existing cases become tuning inputs.
+
+
+## Live validation and report-format v2 · November 25, 2026
+Prompt-v1/schema-v1/rules-v1/library-v1 are unchanged: no acceptance threshold, candidate eligibility, progression rule, or held-out fixture was relaxed. Added sanitized transport error categories, provider-reported model version, optional total/thinking/cache usage, and retained usage on rejected model JSON. These are diagnostics changes, not new model instructions.
+
+Bounded live runners cap batches at three, pace requests by 22 seconds, stop on failure/quota, and never retry automatically. Actual live sample profiles and baseline-driven enjoyed+struggled/disinterest scenarios are separate scopes. The aggregate excludes incompatible model/version reports, keeps failed attempts/rechecks in rate and latency denominators, and deduplicates only latest acceptance coverage. The internal Team insights view replaces the previous mixed mock-only presentation without changing the caregiver design. Actual results and unresolved coverage are regenerated in docs/live-validation.md. Human relevance remains unmeasured.
+
+The exposed classroom code was rotated in local ignored configuration. No credential value was displayed, stored in reports or committed. Website activation still requires completed reviewed technical live coverage and access gates; no hosted protection flag was enabled.

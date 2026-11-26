@@ -1,3 +1,4 @@
+import { ProviderError, type TokenUsage } from "./provider-error";
 import { systemPrompt } from "../../prompts/system-v1";
 import { expectedReason, relevantHistory, type Provider } from "./engine";
 export function geminiProvider(config: {
@@ -103,22 +104,43 @@ export function geminiProvider(config: {
           }),
         },
       );
-      if (!response.ok) throw Error(`provider_http_${response.status}`);
+      if (!response.ok)
+        throw new ProviderError(`provider_http_${response.status}`);
       const data = await response.json();
+      const usage: TokenUsage | undefined = data.usageMetadata
+        ? {
+            input: data.usageMetadata.promptTokenCount ?? 0,
+            output: data.usageMetadata.candidatesTokenCount ?? 0,
+            ...(data.usageMetadata.totalTokenCount !== undefined
+              ? { total: data.usageMetadata.totalTokenCount }
+              : {}),
+            ...(data.usageMetadata.thoughtsTokenCount !== undefined
+              ? { thinking: data.usageMetadata.thoughtsTokenCount }
+              : {}),
+            ...(data.usageMetadata.cachedContentTokenCount !== undefined
+              ? { cached: data.usageMetadata.cachedContentTokenCount }
+              : {}),
+          }
+        : undefined;
       if (data.candidates?.[0]?.finishReason !== "STOP")
-        throw Error("provider_incomplete");
+        throw new ProviderError("provider_incomplete", usage);
       const text = data.candidates[0].content?.parts
-        ?.map((x: { text?: string }) => x.text ?? "")
+        ?.filter((x: { thought?: boolean }) => !x.thought)
+        .map((x: { text?: string }) => x.text ?? "")
         .join("");
-      if (!text || text.length > 16000) throw Error("provider_invalid_body");
+      if (!text || text.length > 16000)
+        throw new ProviderError("provider_invalid_body", usage);
+      let output: unknown;
+      try {
+        output = JSON.parse(text);
+      } catch {
+        throw new ProviderError("provider_invalid_json", usage);
+      }
       return {
-        output: JSON.parse(text),
-        usage: data.usageMetadata
-          ? {
-              input: data.usageMetadata.promptTokenCount ?? 0,
-              output: data.usageMetadata.candidatesTokenCount ?? 0,
-            }
-          : undefined,
+        output,
+        usage,
+        modelVersion:
+          typeof data.modelVersion === "string" ? data.modelVersion : undefined,
       };
     },
   };

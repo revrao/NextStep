@@ -1,0 +1,78 @@
+{
+  "scope": "acceptance",
+  "batchOffset": 2,
+  "batchLimit": 1,
+  "date": "2026-11-26T05:27:45.821Z",
+  "mode": "live",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "cases": 1,
+  "passed": 1,
+  "failed": 0,
+  "rawProviderFailures": 0,
+  "fallbacks": 0,
+  "medianLatencyMs": 2578.6796670000003,
+  "p95LatencyMs": 2578.6796670000003,
+  "subjectiveRelevance": "Not measured; human review required",
+  "liveModelTested": true,
+  "results": [
+    {
+      "case": "age-6",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "fine-motor-09",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "gross-motor-17",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 2578.6796670000003,
+      "tokenUsage": {
+        "input": 610,
+        "output": 71,
+        "total": 681
+      },
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:27:45.820Z",
+      "mode": "live"
+    }
+  ]
+}

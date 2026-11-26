@@ -140,7 +140,7 @@ test("all views render without horizontal overflow and access stays locked", asy
     "Activity library",
     "Your journey",
     "Profile & settings",
-    "Prototype insights",
+    "Team insights",
   ]) {
     await nav(page, name);
     await expect(page.locator("main h1")).toBeVisible();
@@ -189,4 +189,36 @@ test("keyboard dialog focus, compatible choices, and escape", async ({
   await expect(
     page.getByRole("button", { name: "Animal sound stories", exact: true }),
   ).toBeFocused();
+});
+
+test("internal team insights distinguishes live, mock, and unmeasured evidence", async ({
+  page,
+}, info) => {
+  await demo(page);
+  await nav(page, "Team insights");
+  await expect(
+    page.getByText("INTERNAL · PRODUCT TEAM & EVALUATION"),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Live Gemini evidence" }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Mock acceptance suite", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Human-reviewed relevance", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Non-AI fallback rate", { exact: true }),
+  ).toBeVisible();
+  await page.screenshot({
+    path: `test-results/${info.project.name}-team-insights.png`,
+    fullPage: true,
+    animations: "disabled",
+  });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
 });

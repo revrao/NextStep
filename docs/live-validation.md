@@ -1,0 +1,30 @@
+# Live Gemini validation · actual measured evidence
+
+Generated 2026-11-26T05:37:09.613Z (UTC). Model: gemini-3.5-flash-lite. Version bundle: prompt-v1, schema-v1, rules-v1, library-v1. Report format: v2. Synthetic fictional profiles only.
+
+## Status and coverage
+Technical acceptance is incomplete; keep website live gates disabled. Human-reviewed relevance has not been measured. No claim of clinical validation or real-family engagement is made.
+
+- Unique live acceptance cases executed: 15/36; latest passing: 15/36.
+- Held-out live cases executed: 0. Held-out cases have not been used for prompt tuning.
+- Sample-profile attempts: 3/3 passed (sample-milo, sample-luna, sample-robin).
+- Actual feedback-journey steps: 2/2 passed. Their baseline activity was selected by a real prior Gemini sample request, not a hardcoded mock sequence.
+- Unexecuted acceptance cases: focus-cognitive, focus-social, unknown-abilities, no-materials, five-minutes, struggled, enjoyed-and-struggled, enjoyed, not-interested, single-mastery, supported-mastery, same-day-mastery, held-age-2, held-age-9, held-age-21, held-age-33, held-age-47, held-age-59, held-age-70, held-combined-constraints, held-unknown-mastery.
+- Unresolved latest failures: none.
+
+## Live outcomes (all attempts, not just passing rechecks)
+20/22 successful live recommendation attempts (90.9%). 2/22 deterministic non-AI fallbacks (9.1%). 2 provider transport/availability failures and 0 invalid model outputs prevented. A fallback never counts as Gemini success. Compatible reports include samples and feedback journeys, in addition to the acceptance suite; unique acceptance coverage is reported separately.
+
+Latency across all 22 attempts, including timeouts/failures and excluding deliberate pacing: median 1.586 s, p95 3.355 s. Successful-response-only median 1.586 s, p95 2.623 s. Targets remain median <=5 seconds and p95 <=15 seconds. These small-sample engineering measurements do not predict production uptime or latency.
+
+Reported usage: 17465 input, 2327 output, 0 thinking; 19792 total tokens accounted for, across 20/22 attempts with usage metadata. Missing timeout/error usage is unknown, not a zero-token claim. Estimated API cost: $0.00 under the owner-confirmed unbilled Free tier; this is not an independent billing audit. No paid billing, provider switching, paid tools, or Vercel deployment was enabled.
+
+Connectivity smoke (separate from recommendation denominators): passed; model HTTP 200, generation HTTP 200, 6 total tokens. Model-reported versions in recommendation evidence: gemini-3.5-flash-lite.
+
+## Deterministic and injected guardrail evidence
+Mock acceptance 52/52; invalid provider-output fixtures safely blocked 5/5; invalid input rejections 7/7; expected abstentions 4/4. These tests do not involve actual unsafe Gemini output. Unit/integration tests separately inject HTTP 429/500/503, malformed JSON, blocked/truncated output and timeouts without consuming live quota.
+
+## Observed failures and limitations
+The first age-6 attempt reached the unchanged 12-second timeout; one bounded recheck passed. The first age-11 attempt received HTTP 503; one bounded recheck after cooldown passed. Root cause inside Google's service or the network was not independently established. Original failures remain in immutable batch files and rate/latency denominators. No further automatic retries are configured; any further failure or quota exhaustion stops the finite continuation. No safety threshold, eligibility rule, prompt or held-out expectation was weakened to improve scores.
+
+Raw batches: evals/live/*.json. Aggregate: evals/live-summary.json. Mock: evals/latest-mock.json. Connectivity: evals/connectivity-live.json. Regenerate with npm run eval:summary; rebuild the app to refresh the imported internal dashboard snapshot. Relevance ratings require a real human review and remain unmeasured. All content remains professionally unreviewed classroom material.

@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-26T05:30:52.929Z",
+  "mode": "live",
+  "scope": "feedback-journey",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "results": [
+    {
+      "case": "journey-enjoyed-and-struggled",
+      "split": "sample-journey",
+      "expected": {
+        "genuineLive": true,
+        "eligible": true,
+        "adapted": true,
+        "groundedFeedbackReference": true
+      },
+      "baseline": {
+        "activityId": "language-03",
+        "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities.",
+        "mode": "live"
+      },
+      "feedback": [
+        "enjoyed",
+        "struggled"
+      ],
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "simplify",
+          "feedbackId": "live-journey-enjoyed-and-struggled",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        },
+        {
+          "activityId": "fine-motor-10",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "social-34",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "live-journey-v1",
+      "latencyMs": 2519.2528749999983,
+      "tokenUsage": {
+        "input": 877,
+        "output": 147,
+        "total": 1024
+      },
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:30:28.895Z",
+      "mode": "live"
+    },
+    {
+      "case": "journey-not-interested",
+      "split": "sample-journey",
+      "expected": {
+        "genuineLive": true,
+        "eligible": true,
+        "adapted": true,
+        "groundedFeedbackReference": true
+      },
+      "baseline": {
+        "activityId": "language-03",
+        "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities.",
+        "mode": "live"
+      },
+      "feedback": [
+        "not-interested"
+      ],
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "variety",
+          "feedbackId": "live-journey-not-interested",
+          "uncertain": false,
+          "rationale": "You marked Animal sound stories as not interesting. This offers a different play format."
+        },
+        {
+          "activityId": "fine-motor-10",
+          "reason": "variety",
+          "feedbackId": "live-journey-not-interested",
+          "uncertain": false,
+          "rationale": "You marked Animal sound stories as not interesting. This offers a different play format."
+        },
+        {
+          "activityId": "social-34",
+          "reason": "variety",
+          "feedbackId": "live-journey-not-interested",
+          "uncertain": false,
+          "rationale": "You marked Animal sound stories as not interesting. This offers a different play format."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "live-journey-v1",
+      "latencyMs": 2031.9892499999987,
+      "tokenUsage": {
+        "input": 863,
+        "output": 87,
+        "total": 950
+      },
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:30:52.929Z",
+      "mode": "live"
+    }
+  ]
+}

@@ -273,3 +273,88 @@ describe("server access controls", () => {
     vi.unstubAllGlobals();
   });
 });
+
+describe("live diagnostics and credential rotation", () => {
+  it("records quota exhaustion as transport failure without retrying", async () => {
+    const fetcher = vi.fn(
+      async () => new Response("", { status: 429 }),
+    ) as unknown as typeof fetch;
+    const result = await recommend(
+      body(),
+      geminiProvider({ key: "fixture", model: "test", fetcher }),
+    );
+    expect(result.mode).toBe("fallback");
+    expect(result.providerFailure).toBe("provider_http_429");
+    expect(fetcher).toHaveBeenCalledTimes(1);
+  });
+  it("distinguishes a timeout from invalid model content", async () => {
+    const fetcher = vi.fn(async () => {
+      throw new DOMException("private details", "TimeoutError");
+    }) as unknown as typeof fetch;
+    const result = await recommend(
+      body(),
+      geminiProvider({ key: "fixture", model: "test", fetcher }),
+    );
+    expect(result.providerFailure).toBe("provider_timeout");
+    expect(result.message).not.toContain("private details");
+  });
+  it("preserves token usage when malformed JSON is safely rejected", async () => {
+    const fetcher = vi.fn(
+      async () =>
+        new Response(
+          JSON.stringify({
+            candidates: [
+              {
+                finishReason: "STOP",
+                content: { parts: [{ text: "not-json" }] },
+              },
+            ],
+            usageMetadata: {
+              promptTokenCount: 20,
+              candidatesTokenCount: 4,
+              totalTokenCount: 27,
+              thoughtsTokenCount: 3,
+            },
+          }),
+        ),
+    ) as unknown as typeof fetch;
+    const result = await recommend(
+      body(),
+      geminiProvider({ key: "fixture", model: "test", fetcher }),
+    );
+    expect(result.providerFailure).toBe("provider_invalid_json");
+    expect(result.usage).toEqual({
+      input: 20,
+      output: 4,
+      total: 27,
+      thinking: 3,
+    });
+    expect(result.mode).toBe("fallback");
+  });
+  it("revokes the old classroom code after rotation", async () => {
+    vi.stubEnv("DEMO_ACCESS_CODE", "old-fixture-code-long");
+    vi.stubEnv("AI_MODE", "mock");
+    expect(
+      (
+        await POST(
+          request(body("live"), { "x-demo-access": "old-fixture-code-long" }),
+        )
+      ).status,
+    ).toBe(503);
+    vi.stubEnv("DEMO_ACCESS_CODE", "new-fixture-code-long");
+    expect(
+      (
+        await POST(
+          request(body("live"), { "x-demo-access": "old-fixture-code-long" }),
+        )
+      ).status,
+    ).toBe(403);
+    expect(
+      (
+        await POST(
+          request(body("live"), { "x-demo-access": "new-fixture-code-long" }),
+        )
+      ).status,
+    ).toBe(503);
+  });
+});

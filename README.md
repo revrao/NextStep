@@ -25,9 +25,11 @@ npm run test:e2e
 
 Browser tests run against the production build. On macOS they use installed Google Chrome; on Linux install the free Chromium runtime once with `npx playwright install chromium`. Do not run browser tests against an outdated build. Screenshots/traces are in ignored `test-results/`.
 
-Recorded results and limitations: [validation](docs/validation.md). Mock results are not Gemini performance evidence. Evals regenerate `evals/latest-mock.json` and the UI's compact `src/data/evaluation-summary.json`; rebuild after changing them.
+Recorded results and limitations: [validation](docs/validation.md) and [live Gemini evidence](docs/live-validation.md). Mock results are not Gemini performance evidence. Evals regenerate `evals/latest-mock.json` and the UI's compact `src/data/evaluation-summary.json`; rebuild after changing them.
 
 ## Activate Gemini
+
+The owner has configured a key and confirmed an unbilled Free-tier project. Current measured results, including failures and coverage, are in [live validation](docs/live-validation.md). The internal **Team insights** view distinguishes live and mock evidence; human-rated relevance remains unmeasured. Do not infer that website access is enabled from a passing partial batch.
 
 Phase 1 has prepared a local, ignored `.env.local` in this checkout. Follow [the activation handoff](docs/gemini-activation.md) to insert your key manually and confirm the Free tier before testing. Do not overwrite an existing local environment file.
 
@@ -57,3 +59,14 @@ Ready for a **new, separate** NextStep Vercel Hobby project; no deployment has b
 - [Architecture and scope](docs/architecture.md), [content provenance](docs/content.md), [risks and guardrails](docs/safety.md), [metrics](docs/metrics.md), [two-minute demo](docs/demo.md), [prototype evidence](docs/prototype-evidence.md), [AI-use log](docs/ai-use-log.md).
 
 Read `SPEC.md` for the complete supplied project request and `PROGRESS.md` for current status. `AGENTS.md` and `CLAUDE.md` provide matching continuation guidance. No production authentication, cross-device sharing, professional content review, real-family trial, or demonstrated Gemini performance is claimed.
+
+
+## Bounded live evaluation and reporting
+
+- `npm run ai:check`: one model metadata check and one minimal generation smoke request, no retries.
+- `npm run eval:live -- --limit=3 --offset=0`: up to three real acceptance calls, 22-second pacing, stop on failure. Maximum batch size is three.
+- `npm run eval:live -- --samples --limit=3`: the three fictional sample profiles.
+- `npm run eval:feedback`: two follow-up scenarios against an activity chosen in a previously passing real Gemini Milo sample. Stops on failure.
+- `npm run eval:summary`: no external requests; regenerates compatible live aggregate, internal dashboard data and the measured live-validation document. Original failed batches remain preserved.
+
+Live website mode remains a separate gated decision. Acceptance results, runtime fault-injection tests, and human relevance are distinct. Never rerun the live commands continuously to obtain a better score. Free-tier 429 exhaustion is a reason to stop, not enable billing. The rotated classroom code is only in the ignored `.env.local`; retrieve it privately for local UI use and never include it in screenshots, logs or Git.

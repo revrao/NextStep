@@ -1,7 +1,8 @@
 {
+  "scope": "acceptance",
   "batchOffset": 0,
   "batchLimit": null,
-  "date": "2026-11-26T03:48:43.189Z",
+  "date": "2026-11-26T05:30:34.825Z",
   "mode": "mock",
   "versions": {
     "prompt": "prompt-v1",
@@ -14,8 +15,22 @@
   "failed": 0,
   "rawProviderFailures": 5,
   "fallbacks": 5,
-  "medianLatencyMs": 0.11679099999997788,
-  "p95LatencyMs": 1.0573329999999999,
+  "medianLatencyMs": 0.1059579999999869,
+  "p95LatencyMs": 0.7281669999999849,
+  "safety": {
+    "injectedOutputs": {
+      "cases": 5,
+      "passed": 5
+    },
+    "inputRejections": {
+      "cases": 7,
+      "passed": 7
+    },
+    "abstentions": {
+      "cases": 4,
+      "passed": 4
+    }
+  },
   "subjectiveRelevance": "Not measured; human review required",
   "liveModelTested": false
 }

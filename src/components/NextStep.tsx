@@ -28,7 +28,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 import { Onboarding } from "./Onboarding";
 import { Illustration } from "./Illustration";
-import evaluation from "../data/evaluation-summary.json";
+import { EvaluationInsights } from "./EvaluationInsights";
 import { samples } from "../data/profiles";
 import { library, activityById } from "../lib/library";
 import {
@@ -437,7 +437,7 @@ export function NextStep() {
                 onClick={() => navigate("insights")}
               >
                 <BarChart3 size={18} />
-                Prototype insights
+                Team insights
               </a>
               <a
                 href="#privacy"
@@ -483,8 +483,7 @@ export function NextStep() {
               <span className="breadcrumb">Your little moments</span>
               <ChevronRight size={14} />
               <span>
-                {navItems.find((n) => n.id === view)?.label ??
-                  "Prototype insights"}
+                {navItems.find((n) => n.id === view)?.label ?? "Team insights"}
               </span>
             </div>
             <div>
@@ -1117,7 +1116,7 @@ export function NextStep() {
               </section>
             </div>
           )}
-          {view === "insights" && <Insights store={store} />}
+          {view === "insights" && <EvaluationInsights store={store} />}
           {view === "privacy" && (
             <div className="page-content narrow">
               <PageHeading
@@ -1517,132 +1516,5 @@ function ActivityCard({
         </div>
       </div>
     </article>
-  );
-}
-function Insights({ store }: { store: Store }) {
-  const events = store.events;
-  const count = (name: string) => events.filter((e) => e.name === name).length;
-  const requests = count("recommendation_requested"),
-    generated = count("recommendation_generated"),
-    feedback = count("feedback_submitted"),
-    completions = count("activity_completed"),
-    started = count("onboarding_started");
-  const cutoff = Date.now() - 7 * 86400000;
-  const weekly = events.filter((e) => new Date(e.date).getTime() >= cutoff);
-  const families = new Set(
-    weekly
-      .filter((e) => e.name === "recommendation_requested")
-      .map((e) => e.profileId),
-  );
-  const total = weekly.filter((e) => e.name === "activity_completed").length;
-  const metrics = [
-    {
-      label: "Weekly activities per active demo profile",
-      value: families.size
-        ? (total / families.size).toFixed(1)
-        : "Insufficient data",
-      note: `${total} completed ÷ ${families.size} profiles requesting ideas in the last 7 days.`,
-    },
-    {
-      label: "Request-to-completion event ratio",
-      value: generated
-        ? `${Math.round((completions / generated) * 100)}%`
-        : "Insufficient data",
-      note: `${completions} completion events ÷ ${generated} successful sets. Event ratio, not a unique-family conversion rate.`,
-    },
-    {
-      label: "Feedback event ratio",
-      value: completions
-        ? `${Math.round((feedback / completions) * 100)}%`
-        : "Insufficient data",
-      note: `${feedback} feedback events ÷ ${completions} completions. May exceed 100% when feedback follows attempts.`,
-    },
-    {
-      label: "Onboarding completion",
-      value: started
-        ? `${Math.round((events.filter((e) => e.name === "profile_created" && !e.profileId?.startsWith("demo-")).length / started) * 100)}%`
-        : "Insufficient data",
-      note: "Custom profiles created ÷ onboarding starts in retained local events; sample selection excluded.",
-    },
-  ];
-  return (
-    <div className="page-content">
-      <PageHeading
-        eyebrow="BEHIND THE LITTLE MOMENTS"
-        title="Prototype insights."
-        text="Actual interactions with fictional profiles in this browser. This is not production engagement evidence."
-      />
-      <div className="notice">
-        Local demonstration events only · up to 1,000 retained · resets remove
-        associated data · no platform-wide or family retention claims.
-      </div>
-      <div className="insights-grid">
-        {metrics.map((m) => (
-          <article className="settings-card" key={m.label}>
-            <p className="eyebrow">{m.label}</p>
-            <strong className="metric-value">{m.value}</strong>
-            <p>{m.note}</p>
-          </article>
-        ))}
-      </div>
-      <section className="settings-card">
-        <h2>Measured evaluation evidence</h2>
-        <p>
-          <strong>
-            {evaluation.passed} / {evaluation.cases} mock cases passed
-          </strong>{" "}
-          · {evaluation.fallbacks} adversarial outputs rejected into non-AI
-          fallback · {evaluation.date.slice(0, 10)} UTC.
-        </p>
-        <p>
-          Versions: {evaluation.versions.prompt}, {evaluation.versions.rules},{" "}
-          {evaluation.versions.library}. Live model tested: no. Human-reviewed
-          relevance: not measured.
-        </p>
-        <h2>What we can and can’t say</h2>
-        <p>
-          {requests} recommendation requests · {generated} sets generated ·{" "}
-          {count("ai_request_failed")} failures or fallbacks ·{" "}
-          {count("followup_requested")} follow-up requests ·{" "}
-          {count("recommendation_skipped")} skips.
-        </p>
-        <p>
-          Week-one retention, subjective relevance, platform weekly active
-          families, and verified AI cost: insufficient data. Local counters
-          cannot establish these outcomes.
-        </p>
-        <p>
-          Evaluation evidence is saved in the repository under
-          evals/latest-mock.json and docs/validation.md after running the
-          evaluation command. Live Gemini results are unexecuted until
-          credentials are supplied. Mock evaluations do not establish Gemini
-          performance.
-        </p>
-      </section>
-      <section className="settings-card">
-        <h2>Recent local events</h2>
-        {events.length ? (
-          <ul className="event-list">
-            {[...events]
-              .reverse()
-              .slice(0, 30)
-              .map((e) => (
-                <li key={e.id}>
-                  <span>{e.name.replaceAll("_", " ")}</span>
-                  <small>
-                    {new Date(e.date).toLocaleTimeString()}
-                    {e.mode ? ` · ${e.mode}` : ""}
-                    {e.latencyMs !== undefined
-                      ? ` · ${Math.round(e.latencyMs)} ms`
-                      : ""}
-                  </small>
-                </li>
-              ))}
-          </ul>
-        ) : (
-          <p>No events yet. Try a fictional profile to begin.</p>
-        )}
-      </section>
-    </div>
   );
 }
