@@ -8,3 +8,7 @@ Captured in installed Google Chrome on November 25, 2026 (Los Angeles), using th
 - `mobile-dashboard.png`: responsive caregiver view.
 
 All selection is labeled simulated. These screenshots are UI evidence, not Gemini, clinical, engagement, or professional-review evidence. Automated accessibility checks passed on landing/dashboard/dialog in the tested Chromium environment; they do not establish full accessibility conformance.
+
+
+## Actual live-evaluation evidence snapshot
+`desktop-team-insights.png` and `mobile-team-insights.png` show the final internal product-team/evaluation dashboard after real Gemini calls. Current app mode is mock because technical live acceptance is incomplete. Cards distinguish 25/30 successful live attempts, five retained fallbacks, 23/36 executed acceptance cases and 20 latest passes, missing held-out coverage, measured latency/usage, and unmeasured human relevance. These are actual evaluation results, not production engagement. No credential/settings screen is captured.

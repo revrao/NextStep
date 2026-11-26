@@ -358,3 +358,25 @@ describe("live diagnostics and credential rotation", () => {
     ).toBe(503);
   });
 });
+
+describe("pre-provider abstention", () => {
+  it.each(["development", "emergency", "no-candidates"] as const)(
+    "does not spend a provider request for %s",
+    async (kind) => {
+      const select = vi.fn(async () => {
+        throw Error("Provider must not be called");
+      });
+      const profile =
+        kind === "no-candidates"
+          ? { ...p, focus: ["fine-motor"], abilities: [], materials: [] }
+          : { ...p, concern: kind };
+      const result = await recommend(
+        { profile, history: [], mode: "live" },
+        { name: "unreachable-fixture", select },
+      );
+      expect(result.recommendations).toHaveLength(0);
+      expect(select).not.toHaveBeenCalled();
+      expect(result.mode).not.toBe("live");
+    },
+  );
+});

@@ -2,6 +2,9 @@
 
 Live activation follow-up: actual Gemini connectivity, profile recommendations and adaptive feedback have now been exercised. Current measured coverage, raw provider failures, fallbacks, latency and usage are in [live-validation.md](live-validation.md) and the internal Team insights view. The initial-release figures below are historical; they must not be presented as current live evidence.
 
+## Actual live follow-up summary
+Real provider calls produced 25 validated live recommendation successes in 30 attempts (83.3%); five deterministic fallbacks are failures, not Gemini successes. All three sample profiles and both baseline-driven feedback scenarios passed. Live acceptance coverage is incomplete: 23/36 executed, 20 latest passes, three latest provider-availability failures and 13 unexecuted cases. No live held-out cases ran before the bounded availability stop. Local validation passes (39 unit/integration/aggregation tests, 52 mock evals, 12 desktop/mobile browser checks and production build). Human relevance is unmeasured, and website live access stays locked. Estimated external cost is $0 on the owner-confirmed unbilled Free tier; no billing/deployment changes were made. These are prototype engineering results, not clinical or field evidence.
+
 ## Hypothesis and implemented stories
 Caregivers continuing at-home practice after professional counseling may return more often when recommendations reflect what they noticed last time. The implementation demonstrates this mechanism, not retention or clinical effectiveness.
 

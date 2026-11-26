@@ -192,7 +192,7 @@ export function EvaluationInsights({ store }: { store: Store }) {
           <Card
             label="Live invalid outputs prevented"
             value={String(live.invalidOutputsPrevented)}
-            detail={`${live.transportFailures} transport/availability failures counted separately. Zero observed invalid outputs is not proof of safety.`}
+            detail={`${live.transportFailures} transport/availability failures and ${live.unclassifiedFailures} legacy unclassified failures counted separately. Zero observed invalid outputs is not proof of safety.`}
           />
           <Card
             label="Human-reviewed relevance"

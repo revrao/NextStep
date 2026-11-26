@@ -73,6 +73,13 @@ export function summarizeLive(
   const prevented = failures.filter((r) =>
     outputFailureCodes.has(r.rawProviderFailure!),
   );
+  const transport = failures.filter(
+    (r) =>
+      /^provider_http_\d+$/.test(r.rawProviderFailure!) ||
+      ["provider_timeout", "provider_network_failure"].includes(
+        r.rawProviderFailure!,
+      ),
+  );
   return {
     model,
     versions,
@@ -85,7 +92,14 @@ export function summarizeLive(
     fallbackRate: rows.length
       ? rows.filter((r) => r.fallback).length / rows.length
       : null,
-    transportFailures: failures.length - prevented.length,
+    transportFailures: transport.length,
+    unclassifiedFailures: failures.length - prevented.length - transport.length,
+    failureHistory: failures.map((r) => ({
+      case: r.case,
+      category: r.rawProviderFailure,
+      date: r.executionDate,
+      outcome: r.resultMode,
+    })),
     invalidOutputsPrevented: prevented.length,
     medianLatencyMs: percentile(latency, 0.5),
     p95LatencyMs: percentile(latency, 0.95),

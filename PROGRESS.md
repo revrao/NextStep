@@ -1,7 +1,7 @@
 # NextStep progress
 
 ## Status
-Delivered and validated: complete mock-mode prototype, Gemini adapter, documentation and evidence. Live Gemini evaluation awaits a key; Vercel creation/deployment remains with the owner. Repository began clean at c8dab33 and points to https://github.com/revrao/NextStep.git.
+Live Gemini connectivity and the recommendation engine are verified with actual provider calls. All three sample profiles and both baseline-driven feedback scenarios passed. Full live acceptance is blocked by repeated provider HTTP 503 responses; the bounded external run has stopped. Website remains in mock mode with live and hosted gates disabled. Internal Team insights and measured reporting are implemented. No Vercel deployment or paid billing was enabled.
 
 ## Plan
 1. Foundation: Next.js, versioned specification, acceptance cases, safety architecture.
@@ -17,7 +17,7 @@ Delivered and validated: complete mock-mode prototype, Gemini adapter, documenta
 - No free-form caregiver text is sent to Gemini; model selects IDs and validated reason codes only.
 
 ## Current blocker
-Owner generated a Gemini key and approved live activation/testing. Phase 1 configuration is prepared; waiting for manual key insertion into the ignored `.env.local` and confirmation that its project is Free tier with billing disabled. Do not run actual provider requests before that confirmation.
+Intermittent Gemini availability: four actual HTTP 503 responses and one legacy generic fallback at the 12-second deadline. Full acceptance coverage is incomplete: 23/36 cases executed, 20 latest passes, 3 latest availability failures and 13 unexecuted cases (including the 9 live-eligible held-out cases). No key change or billing upgrade is indicated by these results. Wait for service stability before a deliberate bounded continuation; no continuous retries. Exact case offsets are in docs/live-resume.md.
 
 ## Core milestone (November 25, 2026)
 Implemented Next.js/React/TypeScript/Tailwind app, warm responsive UI with original SVG illustrations, fictional onboarding and 3 samples, profile editing/switching, dashboard/library/detail dialogs, structured compatible feedback, adaptive ranking, persistent history, local settings/deletion and local insights.
@@ -70,3 +70,19 @@ Reporting implementation now distinguishes token usage, provider model version, 
 
 ### Validated reporting milestone
 36 unit/integration/aggregation tests and TypeScript pass. Production build passes. All 12 desktop/mobile browser tests pass, including internal dashboard content and accessibility. Desktop/mobile Team insights renders inspected. Live coverage at this checkpoint: 15/36 unique latest cases passing; three sample profiles and both actual feedback scenarios passed. Attempts so far: 20/22 successful, 2 retained fallbacks; raw batch files and the generated report contain the exact snapshot. Remaining finite batches are still running; no activation gate has been enabled. No third/further automatic availability retry is authorized by the continuation script.
+
+
+### Availability interruption and finite coverage collection
+A second HTTP 503 occurred on focus-cognitive after 15 unique acceptance cases had passed. Initial continuation stopped. The existing timeout and earlier 503 each have one passing recheck; the new 503 remains a failed case. To finish independent evaluation evidence without repeating failed requests, a separate finite single-pass script is collecting only the remaining 20 unexecuted cases. It retains every failure, uses the same <=3 batch size and 22-second pacing, stops on quota/output/acceptance failure, and halts after two further availability failures. No acceptance criterion or outcome classification changes. Website live gates stay disabled until full reviewed coverage; no new model or paid service was selected. Unit coverage increased to 39 passing tests, including proof that concerns/emergencies/no candidates make zero provider calls.
+
+
+## Final live-validation snapshot (November 25, 2026)
+External runs stopped at their explicit availability limit; no further Gemini calls are scheduled. Actual recommendation outcomes: 25/30 successful (83.3%), 5/30 labeled non-AI fallbacks (16.7%). Coverage 23/36 executed, 20/36 latest passes. All 3 sample profiles and both baseline-driven feedback scenarios passed. Provider-reported model version gemini-3.5-flash-lite. No safety/grounding validation failure was observed in returned accepted model output; this is not proof of safety. Human-reviewed relevance is unmeasured.
+
+Median all-attempt latency 1.545s, p95 3.355s; provider usage 25201 reported tokens on 25/30 recommendation attempts. Connectivity smoke separately used 6 tokens. Error-request usage is unknown. Estimated cost $0 under the owner-confirmed Free tier; no independent billing audit is claimed. No quota exhaustion was deliberately induced; HTTP 429 is covered with injected transport tests.
+
+39 unit/integration/aggregation tests, TypeScript, 52/52 mock evals, and an earlier 12/12 desktop/mobile browser run pass. Final production build passes. All 12 desktop/mobile browser checks pass again (20.0s), including automated accessibility and internal-dashboard checks; final screenshots are saved under docs/screenshots. Live browser smoke is prepared but NOT executed because technical acceptance is incomplete; do not set live flags merely to run it. Current local AI_MODE=mock, LIVE_EVAL_PASSED=false, CLASSROOM_DEPLOYMENT_PROTECTED=false. Rotated code/key remain ignored and owner-only; neither value was printed or committed. All independent reporting, documentation, and QA work continues despite the provider blocker.
+
+
+### Delivery and exact continuation
+All independent implementation/reporting/QA work for this follow-up is complete and preserved. The external blocker is incomplete Gemini live acceptance due to repeated HTTP 503 responses; do not describe live website activation as complete. Key and rotated code remain local, no values exposed, no paid billing/deployment changes. Review docs/live-validation.md and docs/live-resume.md before any future bounded provider requests. Current credential setup needs no change based on observed 503s. The staged secret scan and GitHub synchronization will be verified with the final evidence commit; local server instances owned by the browser checks were stopped. No continuous evaluation or automation remains running.

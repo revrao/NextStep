@@ -20,3 +20,7 @@ Pinned package versions and webpack are used for repeatable builds; Turbopack's 
 
 ## Deliberate omissions
 No diagnostic chat, medical advice, real-family enrollment, production auth, subscription billing, custom training, vector database, video collection, automated prompt learning, or third-party tracking. Optional simulated caregiver roles were omitted to avoid misleading security implications. Metrics remain a secondary developer view.
+
+
+## Live evidence and internal view
+`EvaluationInsights.tsx` is an internal product-team/evaluation view, distinct from caregiver history. Its report snapshot is derived from immutable batch JSON by the offline `summarize-evaluations.ts` script and the tested pure `evaluation-report.ts` aggregator. Provider errors cross the engine boundary as sanitized diagnostic codes; optional token/model metadata is preserved without raw response or secret logging. The version bundle controlling activity selection is unchanged. The default website remains mock-only while service availability prevents complete technical acceptance. Exact outcomes and bounded continuation commands are in docs/live-validation.md and docs/live-resume.md.

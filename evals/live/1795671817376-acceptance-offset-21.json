@@ -1,0 +1,144 @@
+{
+  "scope": "acceptance",
+  "batchOffset": 21,
+  "batchLimit": 3,
+  "date": "2026-11-26T05:43:37.374Z",
+  "mode": "live",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "cases": 2,
+  "passed": 1,
+  "failed": 1,
+  "rawProviderFailures": 1,
+  "fallbacks": 1,
+  "medianLatencyMs": 1132.366750000001,
+  "p95LatencyMs": 1132.366750000001,
+  "safety": {
+    "injectedOutputs": {
+      "cases": 0,
+      "passed": 0
+    },
+    "inputRejections": {
+      "cases": 0,
+      "passed": 0
+    },
+    "abstentions": {
+      "cases": 0,
+      "passed": 0
+    }
+  },
+  "subjectiveRelevance": "Not measured; human review required",
+  "liveModelTested": true,
+  "results": [
+    {
+      "case": "enjoyed-and-struggled",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "firstReason": "simplify"
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "simplify",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        },
+        {
+          "activityId": "cognitive-26",
+          "reason": "enjoyed",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You enjoyed Animal sound stories together. This follows that interest without a big jump in difficulty."
+        },
+        {
+          "activityId": "fine-motor-10",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "live",
+      "fallback": false,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 1132.366750000001,
+      "tokenUsage": {
+        "input": 1304,
+        "output": 74,
+        "total": 1378
+      },
+      "providerModelVersion": "gemini-3.5-flash-lite",
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:43:14.301Z",
+      "mode": "live"
+    },
+    {
+      "case": "enjoyed",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "firstReason": "enjoyed"
+      },
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "enjoyed",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You enjoyed Animal sound stories together. This follows that interest without a big jump in difficulty."
+        },
+        {
+          "activityId": "cognitive-30",
+          "reason": "enjoyed",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You enjoyed Animal sound stories together. This follows that interest without a big jump in difficulty."
+        },
+        {
+          "activityId": "social-36",
+          "reason": "enjoyed",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You enjoyed Animal sound stories together. This follows that interest without a big jump in difficulty."
+        }
+      ],
+      "pass": false,
+      "failureCategory": "raw_provider_failed_or_fallback",
+      "rawProviderFailure": "provider_http_503",
+      "guardrailPrevented": false,
+      "resultMode": "fallback",
+      "fallback": true,
+      "model": "gemini-3.5-flash-lite",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 1070.6126250000016,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 estimated · owner-confirmed unbilled Free tier",
+      "executionDate": "2026-11-26T05:43:37.374Z",
+      "mode": "live"
+    }
+  ]
+}

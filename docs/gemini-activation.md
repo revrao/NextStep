@@ -1,6 +1,6 @@
 # Gemini activation and live-validation handoff
 
-Current update: the owner confirmed local key insertion and Free tier. The classroom access code was securely rotated on request, without display or Git storage. Actual connectivity and bounded live validation are underway; see [live-validation.md](live-validation.md) for measured results. Phase 1 instructions below are retained for fresh setups, not a request to re-enter the existing key.
+Current update: the owner confirmed local key insertion and Free tier. The classroom access code was securely rotated on request, without display or Git storage. Actual connectivity passed; bounded live validation stopped on repeated provider availability failures and website activation remains locked; see [live-validation.md](live-validation.md) for measured results. Phase 1 instructions below are retained for fresh setups, not a request to re-enter the existing key.
 
 ## Phase 1 status · November 25, 2026
 The server provider, API access gates, environment handling, and existing live runner were reviewed. A local `.env.local` has been created with owner-only permissions (0600), an empty API key, a randomly generated classroom access code, and the existing conservative gates. No API request has been made during activation preparation.

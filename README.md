@@ -29,7 +29,7 @@ Recorded results and limitations: [validation](docs/validation.md) and [live Gem
 
 ## Activate Gemini
 
-The owner has configured a key and confirmed an unbilled Free-tier project. Current measured results, including failures and coverage, are in [live validation](docs/live-validation.md). The internal **Team insights** view distinguishes live and mock evidence; human-rated relevance remains unmeasured. Do not infer that website access is enabled from a passing partial batch.
+The owner has configured a key and confirmed an unbilled Free-tier project. Current measured results, including failures and coverage, are in [live validation](docs/live-validation.md). Repeated HTTP 503 responses stopped the bounded run; **website live access remains disabled**. [Resume instructions](docs/live-resume.md) list exact outstanding cases. The internal **Team insights** view distinguishes live and mock evidence; human-rated relevance remains unmeasured. Do not infer that website access is enabled from a passing partial batch.
 
 Phase 1 has prepared a local, ignored `.env.local` in this checkout. Follow [the activation handoff](docs/gemini-activation.md) to insert your key manually and confirm the Free tier before testing. Do not overwrite an existing local environment file.
 

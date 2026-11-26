@@ -6,42 +6,67 @@
     "rules": "rules-v1",
     "library": "library-v1"
   },
-  "updatedAt": "2026-11-26T05:37:02.157Z",
-  "attempts": 22,
-  "successful": 20,
-  "acceptedResponses": 20,
-  "successRate": 0.9090909090909091,
-  "fallbacks": 2,
-  "fallbackRate": 0.09090909090909091,
-  "transportFailures": 2,
+  "updatedAt": "2026-11-26T05:43:37.374Z",
+  "attempts": 30,
+  "successful": 25,
+  "acceptedResponses": 25,
+  "successRate": 0.8333333333333334,
+  "fallbacks": 5,
+  "fallbackRate": 0.16666666666666666,
+  "transportFailures": 4,
+  "unclassifiedFailures": 1,
+  "failureHistory": [
+    {
+      "case": "age-6",
+      "category": "provider_or_schema_failure",
+      "date": "2026-11-26T05:26:53.179Z",
+      "outcome": "fallback"
+    },
+    {
+      "case": "age-11",
+      "category": "provider_http_503",
+      "date": "2026-11-26T05:31:16.526Z",
+      "outcome": "fallback"
+    },
+    {
+      "case": "focus-cognitive",
+      "category": "provider_http_503",
+      "date": "2026-11-26T05:37:25.682Z",
+      "outcome": "fallback"
+    },
+    {
+      "case": "unknown-abilities",
+      "category": "provider_http_503",
+      "date": "2026-11-26T05:40:38.918Z",
+      "outcome": "fallback"
+    },
+    {
+      "case": "enjoyed",
+      "category": "provider_http_503",
+      "date": "2026-11-26T05:43:37.374Z",
+      "outcome": "fallback"
+    }
+  ],
   "invalidOutputsPrevented": 0,
-  "medianLatencyMs": 1586.1474579999995,
+  "medianLatencyMs": 1544.6472500000018,
   "p95LatencyMs": 3354.533540999997,
-  "latencySamples": 22,
+  "latencySamples": 30,
   "successfulMedianLatencyMs": 1586.1474579999995,
-  "successfulP95LatencyMs": 2622.9679999999935,
+  "successfulP95LatencyMs": 3170.659458000002,
   "tokenUsage": {
-    "input": 17465,
-    "output": 2327,
+    "input": 22259,
+    "output": 2942,
     "thinking": 0,
-    "total": 19792,
-    "requestsWithUsage": 20
+    "total": 25201,
+    "requestsWithUsage": 25
   },
   "estimatedCostUsd": 0,
   "costBasis": "Owner-confirmed unbilled Free tier; estimate, not a billing audit",
   "coverage": {
     "expected": 36,
-    "executed": 15,
-    "passed": 15,
+    "executed": 23,
+    "passed": 20,
     "missing": [
-      "focus-cognitive",
-      "focus-social",
-      "unknown-abilities",
-      "no-materials",
-      "five-minutes",
-      "struggled",
-      "enjoyed-and-struggled",
-      "enjoyed",
       "not-interested",
       "single-mastery",
       "supported-mastery",
@@ -56,7 +81,11 @@
       "held-combined-constraints",
       "held-unknown-mastery"
     ],
-    "failing": [],
+    "failing": [
+      "focus-cognitive",
+      "unknown-abilities",
+      "enjoyed"
+    ],
     "heldoutExecuted": 0
   },
   "samples": {
@@ -76,6 +105,70 @@
     "gemini-3.5-flash-lite"
   ],
   "recentCases": [
+    {
+      "case": "enjoyed",
+      "scope": "acceptance",
+      "pass": false,
+      "mode": "fallback",
+      "latencyMs": 1070.6126250000016,
+      "failure": "raw_provider_failed_or_fallback"
+    },
+    {
+      "case": "enjoyed-and-struggled",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1132.366750000001,
+      "failure": null
+    },
+    {
+      "case": "struggled",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1552.215458000006,
+      "failure": null
+    },
+    {
+      "case": "five-minutes",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 1228.762208,
+      "failure": null
+    },
+    {
+      "case": "no-materials",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 3082.3149589999994,
+      "failure": null
+    },
+    {
+      "case": "unknown-abilities",
+      "scope": "acceptance",
+      "pass": false,
+      "mode": "fallback",
+      "latencyMs": 1124.3397499999992,
+      "failure": "raw_provider_failed_or_fallback"
+    },
+    {
+      "case": "focus-social",
+      "scope": "acceptance",
+      "pass": true,
+      "mode": "live",
+      "latencyMs": 3170.659458000002,
+      "failure": null
+    },
+    {
+      "case": "focus-cognitive",
+      "scope": "acceptance",
+      "pass": false,
+      "mode": "fallback",
+      "latencyMs": 1342.4323750000003,
+      "failure": "raw_provider_failed_or_fallback"
+    },
     {
       "case": "focus-gross-motor",
       "scope": "acceptance",
@@ -106,70 +199,6 @@
       "pass": true,
       "mode": "live",
       "latencyMs": 1305.4287909999985,
-      "failure": null
-    },
-    {
-      "case": "age-60",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 2402.988666999998,
-      "failure": null
-    },
-    {
-      "case": "age-48",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1468.7221250000002,
-      "failure": null
-    },
-    {
-      "case": "age-36",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1811.6266669999895,
-      "failure": null
-    },
-    {
-      "case": "age-35",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 2035.1248329999944,
-      "failure": null
-    },
-    {
-      "case": "age-24",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1324.6991669999989,
-      "failure": null
-    },
-    {
-      "case": "age-18",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1389.4391250000044,
-      "failure": null
-    },
-    {
-      "case": "age-12",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1370.7868330000056,
-      "failure": null
-    },
-    {
-      "case": "age-11",
-      "scope": "acceptance",
-      "pass": true,
-      "mode": "live",
-      "latencyMs": 1589.411082999999,
       "failure": null
     }
   ],
