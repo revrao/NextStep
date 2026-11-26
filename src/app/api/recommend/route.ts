@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { timingSafeEqual } from "node:crypto";
+import { checkLiveAccess, sameOrigin } from "../../../lib/live-access.server";
 import { requestSchema } from "../../../lib/schema";
 import { recommend } from "../../../lib/engine";
 import { geminiProvider } from "../../../lib/gemini";
@@ -9,13 +9,7 @@ export const maxDuration = 20;
 const limits = new Map<string, { time: number; count: number }>();
 export async function POST(request: Request) {
   try {
-    const origin = request.headers.get("origin");
-    if (
-      origin &&
-      (!/^https?:$/.test(new URL(origin).protocol) ||
-        new URL(origin).host !==
-          (request.headers.get("host") ?? new URL(request.url).host))
-    )
+    if (!sameOrigin(request))
       return NextResponse.json(
         { error: "Cross-origin requests are not allowed." },
         { status: 403 },
@@ -41,43 +35,11 @@ export async function POST(request: Request) {
       );
     let provider;
     if (parsed.data.mode === "live") {
-      const code = process.env.DEMO_ACCESS_CODE,
-        provided = request.headers.get("x-demo-access") ?? "";
-      if (
-        !code ||
-        code.length < 16 ||
-        Buffer.byteLength(provided) !== Buffer.byteLength(code) ||
-        !timingSafeEqual(Buffer.from(provided), Buffer.from(code))
-      )
+      const failure = checkLiveAccess(request.headers);
+      if (failure)
         return NextResponse.json(
-          {
-            error:
-              "Live classroom access is locked. Use mock mode or enter the configured classroom access code.",
-          },
-          { status: 403 },
-        );
-      if (
-        process.env.AI_MODE !== "live" ||
-        process.env.LIVE_EVAL_PASSED !== "true" ||
-        !process.env.GEMINI_API_KEY
-      )
-        return NextResponse.json(
-          {
-            error:
-              "Live AI is disabled until credentials and reviewed live acceptance tests are configured. Mock mode is ready.",
-          },
-          { status: 503 },
-        );
-      if (
-        process.env.VERCEL &&
-        process.env.CLASSROOM_DEPLOYMENT_PROTECTED !== "true"
-      )
-        return NextResponse.json(
-          {
-            error:
-              "Hosted live AI requires a protected classroom deployment. Public visitors must use mock mode.",
-          },
-          { status: 503 },
+          { error: failure.error, code: failure.code },
+          { status: failure.status, headers: { "Cache-Control": "no-store" } },
         );
       const now = Date.now(),
         current = limits.get("classroom");
@@ -96,7 +58,7 @@ export async function POST(request: Request) {
       entry.count++;
       limits.set("classroom", entry);
       provider = geminiProvider({
-        key: process.env.GEMINI_API_KEY,
+        key: process.env.GEMINI_API_KEY!,
         model: process.env.GEMINI_MODEL ?? "gemini-3.5-flash-lite",
       });
     }

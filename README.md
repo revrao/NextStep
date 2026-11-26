@@ -73,3 +73,7 @@ Live website mode remains a separate gated decision. Acceptance results, runtime
 
 
 November 26 resume: `npm run eval:resume` selects only compatible missing/unresolved cases, skips passed cases and applies 30/60-second HTTP 503 backoff (max two retries/case, six/session, 22 requests). It makes no provider calls when no cases are pending. No model/prompt change occurred, so the previous passing cases were reused. The [human-review checklist](docs/human-review.md) is the remaining manual relevance assessment; no ratings have been fabricated.
+
+
+## Unlocking local live access
+In Profile & settings, choose Live Gemini, privately enter the classroom code and click **Unlock Live AI** (or press Enter). Wait for the success message and **Live AI unlocked** indicator, then navigate to Your day and request recommendations. Verification makes no Gemini request. Access remains in this tab's memory across navigation; editing/locking/changing mode or refreshing relocks it. If the running server rejects a correct local code after a configuration change, restart NextStep and refresh the page. Full guidance: [local live testing](docs/local-live-testing.md). Never paste keys/codes into chat or persist them in browser storage.

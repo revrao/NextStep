@@ -40,6 +40,13 @@ const report: {
   tokenUsage?: unknown;
   unauthenticatedStatus?: number;
   mockBackupMode?: string;
+  unlockHttpStatus?: number;
+  invalidUnlockStatus?: number;
+  enterSubmissionVerified?: boolean;
+  buttonSubmissionVerified?: boolean;
+  codeRetainedAcrossNavigation?: boolean;
+  recommendationHeaderVerified?: boolean;
+  codeAbsentFromStorage?: boolean;
   failureCategory?: string;
 } = { date: new Date().toISOString(), passed: false };
 try {
@@ -77,9 +84,58 @@ try {
   await page
     .getByRole("combobox", { name: "Mode", exact: true })
     .selectOption("live");
+  const bad = await page.request.post(`${url}/api/live-access`, {
+    headers: { "x-demo-access": "deliberately-invalid-smoke-fixture" },
+  });
+  report.invalidUnlockStatus = bad.status();
+  if (bad.status() !== 403) throw Error("access_control_failure");
+  const input = page.getByLabel("Classroom access code", { exact: true });
+  await input.fill("  " + process.env.DEMO_ACCESS_CODE! + "  ");
+  const unlockResponse = page.waitForResponse(
+    (r) =>
+      r.url().endsWith("/api/live-access") && r.request().method() === "POST",
+  );
+  await input.press("Enter");
+  report.unlockHttpStatus = (await unlockResponse).status();
+  if (report.unlockHttpStatus !== 200) throw Error("access_control_failure");
   await page
-    .locator('input[type="password"]')
-    .fill(process.env.DEMO_ACCESS_CODE!);
+    .locator("#live-access-message")
+    .filter({ hasText: "Live AI unlocked" })
+    .waitFor();
+  report.enterSubmissionVerified = true;
+  await page.getByRole("link", { name: "Your journey", exact: true }).click();
+  await page
+    .getByRole("link", { name: "Profile & settings", exact: true })
+    .click();
+  report.codeRetainedAcrossNavigation =
+    (await page
+      .getByLabel("Classroom access code", { exact: true })
+      .inputValue()) === process.env.DEMO_ACCESS_CODE;
+  if (!report.codeRetainedAcrossNavigation)
+    throw Error("access_control_failure");
+  const buttonResponse = page.waitForResponse(
+    (r) =>
+      r.url().endsWith("/api/live-access") && r.request().method() === "POST",
+  );
+  await page
+    .getByRole("button", { name: "Unlock Live AI", exact: true })
+    .click();
+  report.buttonSubmissionVerified = (await buttonResponse).status() === 200;
+  if (!report.buttonSubmissionVerified) throw Error("access_control_failure");
+  await page
+    .locator("#live-access-message")
+    .filter({ hasText: "Live AI unlocked" })
+    .waitFor();
+  const storage = await page.evaluate(() =>
+    JSON.stringify({
+      local: { ...localStorage },
+      session: { ...sessionStorage },
+    }),
+  );
+  report.codeAbsentFromStorage = !storage.includes(
+    process.env.DEMO_ACCESS_CODE!,
+  );
+  if (!report.codeAbsentFromStorage) throw Error("access_control_failure");
   await page.getByRole("link", { name: "Your day", exact: true }).click();
   const responsePromise = page.waitForResponse(
     (r) =>
@@ -90,6 +146,11 @@ try {
     .click();
   const response = await responsePromise;
   const result = await response.json();
+  report.recommendationHeaderVerified =
+    response.request().headers()["x-demo-access"] ===
+    process.env.DEMO_ACCESS_CODE;
+  if (!report.recommendationHeaderVerified)
+    throw Error("access_control_failure");
   report.httpStatus = response.status();
   report.mode = result.mode;
   report.providerFailure = result.providerFailure;

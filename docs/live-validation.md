@@ -1,6 +1,6 @@
 # Live Gemini validation · actual measured evidence
 
-Generated 2026-11-26T22:49:04.115Z (UTC). Model: gemini-3.5-flash-lite. Version bundle: prompt-v1, schema-v1, rules-v1, library-v1. Report format: v2. Synthetic fictional profiles only.
+Generated 2026-11-26T23:11:35.433Z (UTC). Model: gemini-3.5-flash-lite. Version bundle: prompt-v1, schema-v1, rules-v1, library-v1. Report format: v2. Synthetic fictional profiles only.
 
 ## Status and coverage
 Technical live acceptance coverage is complete. Human-reviewed relevance has not been measured. No claim of clinical validation or real-family engagement is made.
@@ -22,7 +22,7 @@ Reported usage: 38936 input, 4847 output, 0 thinking; 43783 total tokens account
 Connectivity smoke (separate from recommendation denominators): passed; model HTTP 200, generation HTTP 200, 6 total tokens. Model-reported versions in recommendation evidence: gemini-3.5-flash-lite.
 
 ## Protected local activation and website verification
-Local live enabled: yes, with the classroom access code required. Hosted protection flag remains false; no deployment is authorized. Actual browser smoke: passed; unauthenticated HTTP 403, authenticated HTTP 200, result mode live, mock backup mock. Browser request latency 2.696 s, reported total tokens 986. Browser/connectivity requests are excluded from recommendation-evaluation denominators. Credentials are not present in reports or screenshots. Private manual testing: docs/local-live-testing.md.
+Local live enabled: yes, with the classroom access code required. Hosted protection flag remains false; no deployment is authorized. Actual browser smoke: passed; unauthenticated HTTP 403, authenticated HTTP 200, result mode live, mock backup mock. Browser request latency 1.679 s, reported total tokens 986. Browser/connectivity requests are excluded from recommendation-evaluation denominators. Credentials are not present in reports or screenshots. Private manual testing: docs/local-live-testing.md.
 
 ## Deterministic and injected guardrail evidence
 Mock acceptance 52/52; invalid provider-output fixtures safely blocked 5/5; invalid input rejections 7/7; expected abstentions 4/4. These tests do not involve actual unsafe Gemini output. Unit/integration tests separately inject HTTP 429/500/503, malformed JSON, blocked/truncated output and timeouts without consuming live quota.

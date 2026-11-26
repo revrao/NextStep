@@ -16,3 +16,6 @@ All selection is labeled simulated. These screenshots are UI evidence, not Gemin
 
 ## November 26 current captures
 The Team insights desktop/mobile captures now show completed 36/36 latest live acceptance and nine live held-out cases, while retaining historical failures in cumulative rates. `desktop-live-gemini.png` is a real authenticated local website request after legitimate activation, showing the actual Live Gemini label and fictional Milo recommendations. No credential fields, headers or environment files are captured. The browser record is `evals/local-browser-live.json`; automated human relevance remains unmeasured. Earlier screenshot descriptions above are historical milestones.
+
+
+The latest `desktop-live-gemini.png` also verifies the explicit-unlock fix with the real configured classroom code and the global **Live AI unlocked** indicator. The screenshot is taken only on the recommendation dashboard; no credential or settings field is captured. Authentication interactions are documented as booleans/status codes in the archived browser report, without traces, headers or secret values.

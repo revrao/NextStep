@@ -80,6 +80,11 @@ export function NextStep() {
     [storageError, setStorageError] = useState(""),
     [mode, setMode] = useState<"mock" | "live">("mock"),
     [code, setCode] = useState(""),
+    [verifiedCode, setVerifiedCode] = useState(""),
+    [accessStatus, setAccessStatus] = useState<
+      "locked" | "checking" | "unlocked"
+    >("locked"),
+    [accessMessage, setAccessMessage] = useState(""),
     [selected, setSelected] = useState<Activity | null>(null),
     [feedback, setFeedback] = useState<string[]>([]),
     [status, setStatus] = useState<"attempted" | "completed">("completed"),
@@ -89,7 +94,8 @@ export function NextStep() {
     [confirm, setConfirm] = useState<"all" | "history" | null>(null);
   const dialog = useRef<HTMLDialogElement>(null),
     confirmDialog = useRef<HTMLDialogElement>(null),
-    inFlight = useRef(false);
+    inFlight = useRef(false),
+    unlockAttempt = useRef(0);
   const profile = store.profiles.find((p) => p.id === store.active),
     result = profile ? store.results[profile.id] : undefined;
   const history = store.history.filter((h) => h.profileId === profile?.id),
@@ -217,8 +223,68 @@ export function NextStep() {
     event("profile_created", p.id);
     navigate("dashboard");
   }
+  function lockLive(clearInput = true) {
+    unlockAttempt.current++;
+    setVerifiedCode("");
+    setAccessStatus("locked");
+    setAccessMessage("");
+    if (clearInput) setCode("");
+  }
+  function changeMode(next: "mock" | "live") {
+    lockLive();
+    setMode(next);
+    setError("");
+  }
+  async function unlockLive(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const submitted = String(
+      new FormData(e.currentTarget).get("classroomAccess") ?? "",
+    ).trim();
+    const attempt = ++unlockAttempt.current;
+    setVerifiedCode("");
+    setAccessMessage("");
+    if (!submitted) {
+      setAccessStatus("locked");
+      setAccessMessage("Enter the classroom access code to unlock Live AI.");
+      return;
+    }
+    setAccessStatus("checking");
+    setAccessMessage("Checking live access…");
+    let failure =
+      "Could not verify live access. Make sure NextStep is running, then try again.";
+    try {
+      const response = await fetch("/api/live-access", {
+        method: "POST",
+        headers: { "x-demo-access": submitted },
+        cache: "no-store",
+        signal: AbortSignal.timeout(8000),
+      });
+      const data = await response.json();
+      if (attempt !== unlockAttempt.current) return;
+      if (!response.ok || data.unlocked !== true) {
+        failure = typeof data.error === "string" ? data.error : failure;
+        throw Error("access_check_failed");
+      }
+      setCode(submitted);
+      setVerifiedCode(submitted);
+      setAccessStatus("unlocked");
+      setAccessMessage(data.message);
+    } catch {
+      if (attempt === unlockAttempt.current) {
+        setAccessStatus("locked");
+        setVerifiedCode("");
+        setAccessMessage(failure);
+      }
+    }
+  }
   async function generate() {
     if (!profile || inFlight.current) return;
+    if (mode === "live" && (accessStatus !== "unlocked" || !verifiedCode)) {
+      setError(
+        "Live AI access is locked. Unlock Live AI in Profile & settings before requesting recommendations.",
+      );
+      return;
+    }
     inFlight.current = true;
     setBusy(true);
     setError("");
@@ -229,7 +295,7 @@ export function NextStep() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...(mode === "live" ? { "x-demo-access": code } : {}),
+          ...(mode === "live" ? { "x-demo-access": verifiedCode } : {}),
         },
         body: JSON.stringify({
           profile,
@@ -239,8 +305,23 @@ export function NextStep() {
         signal: AbortSignal.timeout(18000),
       });
       const data = await response.json();
-      if (!response.ok)
+      if (!response.ok) {
+        if (
+          mode === "live" &&
+          (response.status === 403 ||
+            [
+              "live_not_configured",
+              "live_not_ready",
+              "hosted_not_protected",
+            ].includes(data.code))
+        ) {
+          lockLive(false);
+          setAccessMessage(
+            data.error ?? "Live access is locked. Unlock again in Settings.",
+          );
+        }
         throw Error(data.error ?? "Unable to request recommendations.");
+      }
       const next = data as Result;
       const date = new Date().toISOString();
       setStore((s) => ({
@@ -491,7 +572,11 @@ export function NextStep() {
                 <Sparkles size={13} />
                 {mode === "mock"
                   ? "Demo mode · simulated"
-                  : "Live mode requested"}
+                  : accessStatus === "unlocked"
+                    ? "Live AI unlocked"
+                    : accessStatus === "checking"
+                      ? "Checking live access…"
+                      : "Live AI locked"}
               </span>
               {profile && (
                 <button
@@ -732,7 +817,7 @@ export function NextStep() {
                       {mode === "live" && (
                         <button
                           className="text-button"
-                          onClick={() => setMode("mock")}
+                          onClick={() => changeMode("mock")}
                         >
                           Switch to mock mode
                         </button>
@@ -1061,7 +1146,9 @@ export function NextStep() {
                   Mode
                   <select
                     value={mode}
-                    onChange={(e) => setMode(e.target.value as "mock" | "live")}
+                    onChange={(e) =>
+                      changeMode(e.target.value as "mock" | "live")
+                    }
                   >
                     <option value="mock">Simulated · deterministic demo</option>
                     <option value="live">
@@ -1070,19 +1157,75 @@ export function NextStep() {
                   </select>
                 </label>
                 {mode === "live" && (
-                  <label>
-                    Classroom access code
+                  <form
+                    method="post"
+                    action="/api/live-access"
+                    onSubmit={unlockLive}
+                    noValidate
+                    aria-label="Unlock live AI access"
+                  >
+                    <label htmlFor="classroom-access-code">
+                      Classroom access code
+                    </label>
                     <input
+                      id="classroom-access-code"
+                      name="classroomAccess"
                       type="password"
                       autoComplete="off"
+                      autoCapitalize="none"
+                      spellCheck={false}
+                      maxLength={256}
                       value={code}
-                      onChange={(e) => setCode(e.target.value)}
+                      onChange={(e) => {
+                        lockLive(false);
+                        setCode(e.target.value);
+                      }}
                       placeholder="Configured by the project owner"
+                      aria-describedby="live-access-help live-access-message"
                     />
-                    <small>
-                      Held only in memory. Never saved in browser storage.
+                    <small id="live-access-help">
+                      Held only in this tab’s memory. Never saved in browser
+                      storage. Refreshing or changing mode locks access again.
                     </small>
-                  </label>
+                    <div className="button-row">
+                      <button
+                        type="submit"
+                        className="button"
+                        disabled={accessStatus === "checking"}
+                      >
+                        {accessStatus === "checking"
+                          ? "Checking access…"
+                          : "Unlock Live AI"}
+                      </button>
+                      {accessStatus === "unlocked" && (
+                        <button
+                          type="button"
+                          className="button secondary"
+                          onClick={() => lockLive()}
+                        >
+                          Lock Live AI
+                        </button>
+                      )}
+                    </div>
+                    <p
+                      id="live-access-message"
+                      role={
+                        accessMessage && accessStatus === "locked"
+                          ? "alert"
+                          : "status"
+                      }
+                      className={
+                        accessMessage && accessStatus === "locked"
+                          ? "error"
+                          : accessStatus === "unlocked"
+                            ? "live-access-success"
+                            : "muted"
+                      }
+                    >
+                      {accessMessage ||
+                        "Enter the code and select Unlock Live AI, or press Enter. Unlocking does not call Gemini."}
+                    </p>
+                  </form>
                 )}
               </section>
               <section className="settings-card">
@@ -1379,8 +1522,7 @@ export function NextStep() {
             onClick={() => {
               if (confirm === "all") {
                 setStore(structuredClone(emptyStore));
-                setMode("mock");
-                setCode("");
+                changeMode("mock");
                 setStorageError("");
                 navigate("home");
               } else if (profile)

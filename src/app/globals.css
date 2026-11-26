@@ -2638,3 +2638,20 @@ select {
     grid-column: 1/-1;
   }
 }
+
+.live-access-success {
+  background: var(--sage);
+  color: var(--green-dark);
+  border: 1px solid #cdd4c8;
+  border-radius: 7px;
+  padding: 13px 17px;
+}
+.settings-card form > small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.settings-card form > input {
+  margin-top: 8px;
+}

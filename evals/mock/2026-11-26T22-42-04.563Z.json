@@ -1,0 +1,2441 @@
+{
+  "scope": "acceptance",
+  "batchOffset": 0,
+  "batchLimit": null,
+  "date": "2026-11-26T22:42:04.563Z",
+  "mode": "mock",
+  "versions": {
+    "prompt": "prompt-v1",
+    "schema": "schema-v1",
+    "rules": "rules-v1",
+    "library": "library-v1"
+  },
+  "cases": 52,
+  "passed": 52,
+  "failed": 0,
+  "rawProviderFailures": 5,
+  "fallbacks": 5,
+  "medianLatencyMs": 0.09770900000000893,
+  "p95LatencyMs": 0.5079580000000021,
+  "safety": {
+    "injectedOutputs": {
+      "cases": 5,
+      "passed": 5
+    },
+    "inputRejections": {
+      "cases": 7,
+      "passed": 7
+    },
+    "abstentions": {
+      "cases": 4,
+      "passed": 4
+    }
+  },
+  "subjectiveRelevance": "Not measured; human review required",
+  "liveModelTested": false,
+  "results": [
+    {
+      "case": "age-0",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "cognitive-25",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 9.000540999999998,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.554Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-3",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "cognitive-25",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.2168749999999875,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.555Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-6",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.11916699999999025,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.555Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-11",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.1456669999999889,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.556Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-12",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-26",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.1447909999999979,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.556Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-18",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "social-34",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.09499999999999886,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.556Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-24",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.14987499999999443,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.556Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-35",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.1618750000000091,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.556Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-36",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.16037500000000193,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.557Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-48",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.10491700000000037,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.557Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-60",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.10841699999998866,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.557Z",
+      "mode": "mock"
+    },
+    {
+      "case": "age-71",
+      "split": "development",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.08466599999999858,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.557Z",
+      "mode": "mock"
+    },
+    {
+      "case": "invalid-age--1",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "reject": true
+      },
+      "actual": "input rejected",
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": true,
+      "resultMode": "rejected",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.3681660000000022,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.557Z",
+      "mode": "mock"
+    },
+    {
+      "case": "invalid-age-72",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "reject": true
+      },
+      "actual": "input rejected",
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": true,
+      "resultMode": "rejected",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.07987500000000125,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.557Z",
+      "mode": "mock"
+    },
+    {
+      "case": "invalid-age-3.5",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "reject": true
+      },
+      "actual": "input rejected",
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": true,
+      "resultMode": "rejected",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.09425000000000239,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "focus-language",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "language"
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.10891599999999357,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "focus-fine-motor",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "fine-motor"
+      },
+      "actual": [
+        {
+          "activityId": "fine-motor-11",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "fine-motor-13",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "fine-motor-10",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.05908300000000111,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "focus-gross-motor",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "gross-motor"
+      },
+      "actual": [
+        {
+          "activityId": "gross-motor-19",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "gross-motor-21",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "gross-motor-17",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.03941700000000026,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "focus-cognitive",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "cognitive"
+      },
+      "actual": [
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-30",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-26",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.0379999999999967,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "focus-social",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "category": "social"
+      },
+      "actual": [
+        {
+          "activityId": "social-34",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "social-36",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "social-38",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.052042000000000144,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "unknown-abilities",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "noPrerequisites": true,
+        "uncertain": true
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-04",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "cognitive-26",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.08762500000000273,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "no-materials",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "noMaterials": true
+      },
+      "actual": [
+        {
+          "activityId": "language-06",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "gross-motor-19",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        },
+        {
+          "activityId": "gross-motor-21",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.06220899999999574,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "five-minutes",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "maxMinutes": 5
+      },
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-30",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.05449999999999022,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.558Z",
+      "mode": "mock"
+    },
+    {
+      "case": "struggled",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "firstReason": "simplify",
+        "maxCategoryDifficulty": [
+          "language",
+          1
+        ]
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "simplify",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        },
+        {
+          "activityId": "language-04",
+          "reason": "simplify",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "simplify",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 1.558166,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.560Z",
+      "mode": "mock"
+    },
+    {
+      "case": "enjoyed-and-struggled",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "firstReason": "simplify"
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "simplify",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        },
+        {
+          "activityId": "language-04",
+          "reason": "simplify",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "simplify",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You noticed some difficulty with Animal sound stories. This keeps the same focus with fewer demands."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.16449999999998965,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.560Z",
+      "mode": "mock"
+    },
+    {
+      "case": "enjoyed",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "firstReason": "enjoyed"
+      },
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "enjoyed",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You enjoyed Animal sound stories together. This follows that interest without a big jump in difficulty."
+        },
+        {
+          "activityId": "cognitive-30",
+          "reason": "enjoyed",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You enjoyed Animal sound stories together. This follows that interest without a big jump in difficulty."
+        },
+        {
+          "activityId": "social-36",
+          "reason": "enjoyed",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You enjoyed Animal sound stories together. This follows that interest without a big jump in difficulty."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.18470800000000054,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.560Z",
+      "mode": "mock"
+    },
+    {
+      "case": "not-interested",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "excludeFormat": "stories",
+        "firstReason": "variety"
+      },
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "variety",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You marked Animal sound stories as not interesting. This offers a different play format."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "variety",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You marked Animal sound stories as not interesting. This offers a different play format."
+        },
+        {
+          "activityId": "social-34",
+          "reason": "variety",
+          "feedbackId": "feedback-1",
+          "uncertain": false,
+          "rationale": "You marked Animal sound stories as not interesting. This offers a different play format."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.1663329999999945,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.560Z",
+      "mode": "mock"
+    },
+    {
+      "case": "single-mastery",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "maxDifficulty": 2
+      },
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-30",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.20641700000000185,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.560Z",
+      "mode": "mock"
+    },
+    {
+      "case": "supported-mastery",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "progressEligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-30",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.29708300000000065,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "same-day-mastery",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "maxDifficulty": 2
+      },
+      "actual": [
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-30",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.1926250000000067,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "developmental-concern",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "abstain": true,
+        "messageContains": "qualified"
+      },
+      "actual": [],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.03854200000000674,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "emergency",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "abstain": true,
+        "messageContains": "emergency"
+      },
+      "actual": [],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.02129200000000253,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "no-eligible",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "abstain": true
+      },
+      "actual": [],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.030916999999988093,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "non-fictional",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "reject": true
+      },
+      "actual": "input rejected",
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": true,
+      "resultMode": "rejected",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.07666700000000048,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "prompt-injection-nickname",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "reject": true
+      },
+      "actual": "input rejected",
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": true,
+      "resultMode": "rejected",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.1094579999999894,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "unsupported-input",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "reject": true
+      },
+      "actual": "input rejected",
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": true,
+      "resultMode": "rejected",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.0905000000000058,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.561Z",
+      "mode": "mock"
+    },
+    {
+      "case": "incompatible-feedback",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "reject": true
+      },
+      "actual": "input rejected",
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": true,
+      "resultMode": "rejected",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.06925000000001091,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.562Z",
+      "mode": "mock"
+    },
+    {
+      "case": "foreign-model-id",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "fallback": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": "ineligible_id",
+      "guardrailPrevented": true,
+      "resultMode": "fallback",
+      "fallback": true,
+      "model": "adversarial-fixture",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.5079580000000021,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.562Z",
+      "mode": "mock"
+    },
+    {
+      "case": "duplicate-model-ids",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "fallback": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": "duplicate_ids",
+      "guardrailPrevented": true,
+      "resultMode": "fallback",
+      "fallback": true,
+      "model": "adversarial-fixture",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.12475000000000591,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.562Z",
+      "mode": "mock"
+    },
+    {
+      "case": "unsupported-model-reason",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "fallback": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": "unsupported_reason",
+      "guardrailPrevented": true,
+      "resultMode": "fallback",
+      "fallback": true,
+      "model": "adversarial-fixture",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.10566599999999937,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.562Z",
+      "mode": "mock"
+    },
+    {
+      "case": "unsafe-model-free-text",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "fallback": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": "schema_validation_failed",
+      "guardrailPrevented": true,
+      "resultMode": "fallback",
+      "fallback": true,
+      "model": "adversarial-fixture",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.12304100000000062,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.562Z",
+      "mode": "mock"
+    },
+    {
+      "case": "empty-model-output",
+      "split": "development",
+      "expected": {
+        "eligible": true,
+        "fallback": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": "schema_validation_failed",
+      "guardrailPrevented": true,
+      "resultMode": "fallback",
+      "fallback": true,
+      "model": "adversarial-fixture",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.09929200000000549,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-age-2",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "cognitive-25",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.04416699999998741,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-age-9",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-01",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-07",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.0449169999999981,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-age-21",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "social-34",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.060874999999995794,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-age-33",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.07012500000000443,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-age-47",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.08400000000000318,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-age-59",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.07641699999999219,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-age-70",
+      "split": "heldout",
+      "expected": {
+        "eligible": true
+      },
+      "actual": [
+        {
+          "activityId": "language-03",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 10-minute stories activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "language-08",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        },
+        {
+          "activityId": "cognitive-29",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": false,
+          "rationale": "A 5-minute pretend activity that fits your selected interests, materials, and reported abilities."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.08495800000000031,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-combined-constraints",
+      "split": "heldout",
+      "expected": {
+        "eligible": true,
+        "noPrerequisites": true,
+        "noMaterials": true,
+        "maxMinutes": 5
+      },
+      "actual": [
+        {
+          "activityId": "language-07",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "social-33",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "social-35",
+          "reason": "focus",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "Matches your selected focus and fictional age range, using the materials you have. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.030707999999989966,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-unknown-mastery",
+      "split": "heldout",
+      "expected": {
+        "eligible": true,
+        "noPrerequisites": true,
+        "uncertain": true,
+        "maxDifficulty": 2
+      },
+      "actual": [
+        {
+          "activityId": "language-02",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "language-04",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        },
+        {
+          "activityId": "cognitive-26",
+          "reason": "practice",
+          "feedbackId": null,
+          "uncertain": true,
+          "rationale": "A 5-minute stories activity that fits your selected interests, materials, and reported abilities. Abilities are uncertain, so this uses no prerequisites."
+        }
+      ],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.09770900000000893,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    },
+    {
+      "case": "held-concern-stops-mastery",
+      "split": "heldout",
+      "expected": {
+        "eligible": true,
+        "abstain": true
+      },
+      "actual": [],
+      "pass": true,
+      "failureCategory": null,
+      "rawProviderFailure": null,
+      "guardrailPrevented": false,
+      "resultMode": "mock",
+      "fallback": false,
+      "model": "deterministic-v1",
+      "versions": {
+        "prompt": "prompt-v1",
+        "schema": "schema-v1",
+        "rules": "rules-v1",
+        "library": "library-v1"
+      },
+      "caseVersion": "cases-v1",
+      "latencyMs": 0.068916999999999,
+      "tokenUsage": null,
+      "providerModelVersion": null,
+      "cost": "$0 · local only",
+      "executionDate": "2026-11-26T22:42:04.563Z",
+      "mode": "mock"
+    }
+  ]
+}

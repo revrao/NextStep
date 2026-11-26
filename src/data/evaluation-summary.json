@@ -2,7 +2,7 @@
   "scope": "acceptance",
   "batchOffset": 0,
   "batchLimit": null,
-  "date": "2026-11-26T22:42:04.563Z",
+  "date": "2026-11-26T23:07:36.328Z",
   "mode": "mock",
   "versions": {
     "prompt": "prompt-v1",
@@ -15,8 +15,8 @@
   "failed": 0,
   "rawProviderFailures": 5,
   "fallbacks": 5,
-  "medianLatencyMs": 0.09770900000000893,
-  "p95LatencyMs": 0.5079580000000021,
+  "medianLatencyMs": 0.09487500000000182,
+  "p95LatencyMs": 0.707792000000012,
   "safety": {
     "injectedOutputs": {
       "cases": 5,

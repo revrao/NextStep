@@ -26,3 +26,7 @@ No diagnostic chat, medical advice, real-family enrollment, production auth, sub
 
 ## Live evidence and internal view
 `EvaluationInsights.tsx` is an internal product-team/evaluation view, distinct from caregiver history. Its report snapshot is derived from immutable batch JSON by the offline `summarize-evaluations.ts` script and the tested pure `evaluation-report.ts` aggregator. Provider errors cross the engine boundary as sanitized diagnostic codes; optional token/model metadata is preserved without raw response or secret logging. The version bundle controlling activity selection is unchanged. The default website remains mock-only while service availability prevents complete technical acceptance. Exact outcomes and bounded continuation commands are in docs/live-validation.md and docs/live-resume.md.
+
+
+## Explicit classroom unlock
+`src/lib/live-access.server.ts` owns same-origin and constant-time classroom-code/configuration checks, shared by POST /api/live-access and POST /api/recommend. Unlock validates permissions without provider calls or persistent sessions. The client holds draft and verified codes separately in the root component's memory; only verified state supplies the recommendation header. Native form submission handles Enter/autofill. Server rejection or client edits relock access, and a request-generation counter ignores stale verification responses. No browser storage/cookie contains credentials. The UI indicator records permission, not a successful Gemini generation; result mode still identifies live, mock or fallback separately.
