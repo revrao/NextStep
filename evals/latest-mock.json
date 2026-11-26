@@ -1,5 +1,7 @@
 {
-  "date": "2026-11-26T03:43:36.611Z",
+  "batchOffset": 0,
+  "batchLimit": null,
+  "date": "2026-11-26T03:48:43.189Z",
   "mode": "mock",
   "versions": {
     "prompt": "prompt-v1",
@@ -12,8 +14,8 @@
   "failed": 0,
   "rawProviderFailures": 5,
   "fallbacks": 5,
-  "medianLatencyMs": 0.10320899999999256,
-  "p95LatencyMs": 0.729582999999991,
+  "medianLatencyMs": 0.11679099999997788,
+  "p95LatencyMs": 1.0573329999999999,
   "subjectiveRelevance": "Not measured; human review required",
   "liveModelTested": false,
   "results": [
@@ -59,10 +61,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 8.855083000000008,
+      "latencyMs": 9.95670800000002,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.602Z",
+      "executionDate": "2026-11-26T03:48:43.179Z",
       "mode": "mock"
     },
     {
@@ -107,10 +109,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.16525000000001455,
+      "latencyMs": 0.12883399999998346,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.603Z",
+      "executionDate": "2026-11-26T03:48:43.180Z",
       "mode": "mock"
     },
     {
@@ -155,10 +157,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.13245800000001395,
+      "latencyMs": 0.11679099999997788,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.603Z",
+      "executionDate": "2026-11-26T03:48:43.180Z",
       "mode": "mock"
     },
     {
@@ -203,10 +205,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08712499999998613,
+      "latencyMs": 0.09125000000000227,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.603Z",
+      "executionDate": "2026-11-26T03:48:43.180Z",
       "mode": "mock"
     },
     {
@@ -251,10 +253,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.14333400000001006,
+      "latencyMs": 0.14575000000002092,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.180Z",
       "mode": "mock"
     },
     {
@@ -299,10 +301,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.09970899999999006,
+      "latencyMs": 0.10104200000000674,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.180Z",
       "mode": "mock"
     },
     {
@@ -347,10 +349,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.11479099999999676,
+      "latencyMs": 0.11949999999998795,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.181Z",
       "mode": "mock"
     },
     {
@@ -395,10 +397,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.1602089999999805,
+      "latencyMs": 0.21008399999999483,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.181Z",
       "mode": "mock"
     },
     {
@@ -443,10 +445,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.15862500000000068,
+      "latencyMs": 0.180499999999995,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.181Z",
       "mode": "mock"
     },
     {
@@ -491,10 +493,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.11887500000000273,
+      "latencyMs": 0.24529200000000628,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.181Z",
       "mode": "mock"
     },
     {
@@ -539,10 +541,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.09299999999998931,
+      "latencyMs": 0.13458299999999213,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.181Z",
       "mode": "mock"
     },
     {
@@ -587,10 +589,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.0887920000000122,
+      "latencyMs": 0.12487500000000296,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.604Z",
+      "executionDate": "2026-11-26T03:48:43.181Z",
       "mode": "mock"
     },
     {
@@ -614,10 +616,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.3410000000000082,
+      "latencyMs": 0.36120900000000233,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.605Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -641,10 +643,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.729582999999991,
+      "latencyMs": 0.06387500000002433,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.605Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -668,10 +670,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08975000000000932,
+      "latencyMs": 0.10912500000000591,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -717,10 +719,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.10583300000001827,
+      "latencyMs": 0.13833300000001714,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -766,10 +768,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.048332999999985304,
+      "latencyMs": 0.07537499999997976,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -815,10 +817,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.05758399999999142,
+      "latencyMs": 0.047457999999977574,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -864,10 +866,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.0473750000000166,
+      "latencyMs": 0.04254099999999994,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -913,10 +915,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.046959000000015294,
+      "latencyMs": 0.06558300000000372,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -963,10 +965,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08495800000000031,
+      "latencyMs": 0.08379200000001674,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.182Z",
       "mode": "mock"
     },
     {
@@ -1012,10 +1014,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.05770800000001941,
+      "latencyMs": 1.3944999999999936,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.184Z",
       "mode": "mock"
     },
     {
@@ -1061,10 +1063,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.0573750000000075,
+      "latencyMs": 0.05779100000000881,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.606Z",
+      "executionDate": "2026-11-26T03:48:43.184Z",
       "mode": "mock"
     },
     {
@@ -1114,10 +1116,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.9618330000000128,
+      "latencyMs": 1.0573329999999999,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.607Z",
+      "executionDate": "2026-11-26T03:48:43.185Z",
       "mode": "mock"
     },
     {
@@ -1163,10 +1165,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.16250000000002274,
+      "latencyMs": 0.1591669999999965,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.607Z",
+      "executionDate": "2026-11-26T03:48:43.185Z",
       "mode": "mock"
     },
     {
@@ -1212,10 +1214,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.1996249999999975,
+      "latencyMs": 0.18241699999998673,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.607Z",
+      "executionDate": "2026-11-26T03:48:43.185Z",
       "mode": "mock"
     },
     {
@@ -1262,10 +1264,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.17095799999998462,
+      "latencyMs": 0.15579199999999105,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.608Z",
+      "executionDate": "2026-11-26T03:48:43.185Z",
       "mode": "mock"
     },
     {
@@ -1311,10 +1313,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.2144999999999868,
+      "latencyMs": 0.23654099999998834,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.608Z",
+      "executionDate": "2026-11-26T03:48:43.186Z",
       "mode": "mock"
     },
     {
@@ -1360,10 +1362,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.32929199999998104,
+      "latencyMs": 0.3317920000000072,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.608Z",
+      "executionDate": "2026-11-26T03:48:43.186Z",
       "mode": "mock"
     },
     {
@@ -1409,10 +1411,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.2129589999999837,
+      "latencyMs": 0.271665999999982,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.608Z",
+      "executionDate": "2026-11-26T03:48:43.186Z",
       "mode": "mock"
     },
     {
@@ -1437,10 +1439,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.03666599999999676,
+      "latencyMs": 0.1460830000000044,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.608Z",
+      "executionDate": "2026-11-26T03:48:43.186Z",
       "mode": "mock"
     },
     {
@@ -1465,10 +1467,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.023333000000008042,
+      "latencyMs": 0.026332999999993945,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.608Z",
+      "executionDate": "2026-11-26T03:48:43.187Z",
       "mode": "mock"
     },
     {
@@ -1492,10 +1494,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.0367920000000197,
+      "latencyMs": 0.0363749999999925,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.608Z",
+      "executionDate": "2026-11-26T03:48:43.187Z",
       "mode": "mock"
     },
     {
@@ -1519,10 +1521,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.06154200000000287,
+      "latencyMs": 0.1875,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.609Z",
+      "executionDate": "2026-11-26T03:48:43.187Z",
       "mode": "mock"
     },
     {
@@ -1546,10 +1548,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.18924999999998704,
+      "latencyMs": 0.127207999999996,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.609Z",
+      "executionDate": "2026-11-26T03:48:43.187Z",
       "mode": "mock"
     },
     {
@@ -1573,10 +1575,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.10320899999999256,
+      "latencyMs": 0.09787499999998772,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.609Z",
+      "executionDate": "2026-11-26T03:48:43.187Z",
       "mode": "mock"
     },
     {
@@ -1600,10 +1602,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08329100000000267,
+      "latencyMs": 0.08087499999999181,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.609Z",
+      "executionDate": "2026-11-26T03:48:43.187Z",
       "mode": "mock"
     },
     {
@@ -1649,10 +1651,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.5109589999999855,
+      "latencyMs": 0.5112919999999974,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.609Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -1698,10 +1700,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.13579099999998334,
+      "latencyMs": 0.12466699999998809,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -1747,10 +1749,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.12895800000001145,
+      "latencyMs": 0.1094579999999894,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -1796,10 +1798,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.15458399999999983,
+      "latencyMs": 0.16454099999998562,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -1845,10 +1847,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.11545799999998962,
+      "latencyMs": 0.10762500000001296,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -1893,10 +1895,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.04862499999998704,
+      "latencyMs": 0.05029099999998721,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -1941,10 +1943,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.05004100000002154,
+      "latencyMs": 0.05087499999999068,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -1989,10 +1991,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07295799999999986,
+      "latencyMs": 0.07204200000001038,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -2037,10 +2039,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07720800000001304,
+      "latencyMs": 0.07579099999998107,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -2085,10 +2087,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08637500000000387,
+      "latencyMs": 0.07987500000001546,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -2133,10 +2135,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.08087499999999181,
+      "latencyMs": 0.08724999999998317,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.188Z",
       "mode": "mock"
     },
     {
@@ -2181,10 +2183,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07083299999999326,
+      "latencyMs": 0.0998339999999871,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.189Z",
       "mode": "mock"
     },
     {
@@ -2232,10 +2234,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.03387499999999477,
+      "latencyMs": 0.033999999999991815,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.610Z",
+      "executionDate": "2026-11-26T03:48:43.189Z",
       "mode": "mock"
     },
     {
@@ -2283,10 +2285,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.11679200000000378,
+      "latencyMs": 0.11283300000002328,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.611Z",
+      "executionDate": "2026-11-26T03:48:43.189Z",
       "mode": "mock"
     },
     {
@@ -2310,10 +2312,10 @@
         "library": "library-v1"
       },
       "caseVersion": "cases-v1",
-      "latencyMs": 0.07483300000001236,
+      "latencyMs": 0.07908300000002555,
       "tokenUsage": null,
       "cost": "$0 · local only",
-      "executionDate": "2026-11-26T03:43:36.611Z",
+      "executionDate": "2026-11-26T03:48:43.189Z",
       "mode": "mock"
     }
   ]

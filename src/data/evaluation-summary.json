@@ -1,5 +1,7 @@
 {
-  "date": "2026-11-26T03:43:36.611Z",
+  "batchOffset": 0,
+  "batchLimit": null,
+  "date": "2026-11-26T03:48:43.189Z",
   "mode": "mock",
   "versions": {
     "prompt": "prompt-v1",
@@ -12,8 +14,8 @@
   "failed": 0,
   "rawProviderFailures": 5,
   "fallbacks": 5,
-  "medianLatencyMs": 0.10320899999999256,
-  "p95LatencyMs": 0.729582999999991,
+  "medianLatencyMs": 0.11679099999997788,
+  "p95LatencyMs": 1.0573329999999999,
   "subjectiveRelevance": "Not measured; human review required",
   "liveModelTested": false
 }

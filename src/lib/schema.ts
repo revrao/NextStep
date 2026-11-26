@@ -1,20 +1,171 @@
-import { z } from 'zod';
-export const categories = ['language','fine-motor','gross-motor','cognitive','social'] as const;
-export const labels: Record<Category,string> = {language:'Language & communication','fine-motor':'Fine motor skills','gross-motor':'Gross motor skills',cognitive:'Cognitive development',social:'Social & emotional'};
-export type Category = typeof categories[number];
-export const abilities = ['points','sits','walks','grasps','words','matches','turns'] as const;
-export const abilityLabels: Record<typeof abilities[number],string> = {points:'Points to familiar things',sits:'Sits without support',walks:'Walks independently',grasps:'Grasps large objects',words:'Uses familiar words',matches:'Matches similar things',turns:'Tries taking turns'};
-export const materials = ['picture book','large blocks','paper','crayons','soft ball','toy animal','cups'] as const;
-export const preferences = ['stories','movement','making','pretend','quiet'] as const;
-export const observations = ['mastered','enjoyed','struggled','not-interested'] as const;
-export const profileSchema = z.object({id:z.string().max(50),nickname:z.string().trim().min(1).max(24).regex(/^[a-zA-Z ]+$/,'Use a fictional nickname with letters only.'),age:z.number().int().min(0).max(71),focus:z.array(z.enum(categories)).min(1).max(5),abilities:z.array(z.enum(abilities)).max(7),duration:z.union([z.literal(5),z.literal(10),z.literal(15)]),materials:z.array(z.enum(materials)).max(7),preferences:z.array(z.enum(preferences)).max(5),fictional:z.literal(true),concern:z.enum(['none','development','emergency']).default('none')}).strict();
-export type Profile=z.infer<typeof profileSchema>;
-export const historySchema=z.object({id:z.string().max(70),profileId:z.string().max(50),activityId:z.string().max(60),date:z.iso.datetime(),status:z.enum(['recommended','attempted','completed','skipped']),feedback:z.array(z.enum(observations)).max(4),rationale:z.string().max(400),mode:z.enum(['mock','live','fallback'])}).strict().refine(h=>!(h.feedback.includes('mastered')&&h.feedback.includes('struggled'))&&!(h.feedback.includes('enjoyed')&&h.feedback.includes('not-interested')),'Choose compatible observations.');
-export type History=z.infer<typeof historySchema>;
-export const requestSchema=z.object({profile:profileSchema,history:z.array(historySchema).max(300),mode:z.enum(['mock','live']).default('mock')}).strict();
-export const reasonCodes=['focus','practice','enjoyed','simplify','variety','progress'] as const;
-export const selectionSchema=z.object({selections:z.array(z.object({activityId:z.string().max(60),reason:z.enum(reasonCodes),feedbackId:z.string().max(70).nullable(),uncertain:z.boolean()}).strict()).min(1).max(3)}).strict();
-export type Selection=z.infer<typeof selectionSchema>['selections'][number];
-export interface Activity {id:string;title:string;category:Category;minAge:number;maxAge:number;prerequisites:typeof abilities[number][];difficulty:1|2|3;minutes:5|10|15;materials:typeof materials[number][];format:typeof preferences[number];description:string;steps:string[];supervision:string;safetyExclusions:string[];source:{organization:string;url:string|null;accessed:string|null;review:'unreviewed';basis:string};version:string}
-export type Recommendation={activityId:string;rationale:string;reason:Selection['reason'];feedbackId:string|null;uncertain:boolean};
-export type Result={recommendations:Recommendation[];mode:'mock'|'live'|'fallback';message:string;latencyMs:number;model:string;usage?:{input:number;output:number};providerFailure?:string;versions:{prompt:string;schema:string;rules:string;library:string}};
+import { z } from "zod";
+export const categories = [
+  "language",
+  "fine-motor",
+  "gross-motor",
+  "cognitive",
+  "social",
+] as const;
+export const labels: Record<Category, string> = {
+  language: "Language & communication",
+  "fine-motor": "Fine motor skills",
+  "gross-motor": "Gross motor skills",
+  cognitive: "Cognitive development",
+  social: "Social & emotional",
+};
+export type Category = (typeof categories)[number];
+export const abilities = [
+  "points",
+  "sits",
+  "walks",
+  "grasps",
+  "words",
+  "matches",
+  "turns",
+] as const;
+export const abilityLabels: Record<(typeof abilities)[number], string> = {
+  points: "Points to familiar things",
+  sits: "Sits without support",
+  walks: "Walks independently",
+  grasps: "Grasps large objects",
+  words: "Uses familiar words",
+  matches: "Matches similar things",
+  turns: "Tries taking turns",
+};
+export const materials = [
+  "picture book",
+  "large blocks",
+  "paper",
+  "crayons",
+  "soft ball",
+  "toy animal",
+  "cups",
+] as const;
+export const preferences = [
+  "stories",
+  "movement",
+  "making",
+  "pretend",
+  "quiet",
+] as const;
+export const observations = [
+  "mastered",
+  "enjoyed",
+  "struggled",
+  "not-interested",
+] as const;
+export const profileSchema = z
+  .object({
+    id: z.string().max(50),
+    nickname: z
+      .string()
+      .trim()
+      .min(1)
+      .max(24)
+      .regex(/^[a-zA-Z ]+$/, "Use a fictional nickname with letters only."),
+    age: z.number().int().min(0).max(71),
+    focus: z.array(z.enum(categories)).min(1).max(5),
+    abilities: z.array(z.enum(abilities)).max(7),
+    duration: z.union([z.literal(5), z.literal(10), z.literal(15)]),
+    materials: z.array(z.enum(materials)).max(7),
+    preferences: z.array(z.enum(preferences)).max(5),
+    fictional: z.literal(true),
+    concern: z.enum(["none", "development", "emergency"]).default("none"),
+  })
+  .strict();
+export type Profile = z.infer<typeof profileSchema>;
+export const historySchema = z
+  .object({
+    id: z.string().max(70),
+    profileId: z.string().max(50),
+    activityId: z.string().max(60),
+    date: z.iso.datetime(),
+    status: z.enum(["recommended", "attempted", "completed", "skipped"]),
+    feedback: z.array(z.enum(observations)).max(4),
+    rationale: z.string().max(400),
+    mode: z.enum(["mock", "live", "fallback"]),
+  })
+  .strict()
+  .refine(
+    (h) =>
+      !(h.feedback.includes("mastered") && h.feedback.includes("struggled")) &&
+      !(
+        h.feedback.includes("enjoyed") && h.feedback.includes("not-interested")
+      ),
+    "Choose compatible observations.",
+  );
+export type History = z.infer<typeof historySchema>;
+export const requestSchema = z
+  .object({
+    profile: profileSchema,
+    history: z.array(historySchema).max(300),
+    mode: z.enum(["mock", "live"]).default("mock"),
+  })
+  .strict();
+export const reasonCodes = [
+  "focus",
+  "practice",
+  "enjoyed",
+  "simplify",
+  "variety",
+  "progress",
+] as const;
+export const selectionSchema = z
+  .object({
+    selections: z
+      .array(
+        z
+          .object({
+            activityId: z.string().max(60),
+            reason: z.enum(reasonCodes),
+            feedbackId: z.string().max(70).nullable(),
+            uncertain: z.boolean(),
+          })
+          .strict(),
+      )
+      .min(1)
+      .max(3),
+  })
+  .strict();
+export type Selection = z.infer<typeof selectionSchema>["selections"][number];
+export interface Activity {
+  id: string;
+  title: string;
+  category: Category;
+  minAge: number;
+  maxAge: number;
+  prerequisites: (typeof abilities)[number][];
+  difficulty: 1 | 2 | 3;
+  minutes: 5 | 10 | 15;
+  materials: (typeof materials)[number][];
+  format: (typeof preferences)[number];
+  description: string;
+  steps: string[];
+  supervision: string;
+  safetyExclusions: string[];
+  source: {
+    organization: string;
+    url: string | null;
+    accessed: string | null;
+    review: "unreviewed";
+    basis: string;
+  };
+  version: string;
+}
+export type Recommendation = {
+  activityId: string;
+  rationale: string;
+  reason: Selection["reason"];
+  feedbackId: string | null;
+  uncertain: boolean;
+};
+export type Result = {
+  recommendations: Recommendation[];
+  mode: "mock" | "live" | "fallback";
+  message: string;
+  latencyMs: number;
+  model: string;
+  usage?: { input: number; output: number };
+  providerFailure?: string;
+  versions: { prompt: string; schema: string; rules: string; library: string };
+};

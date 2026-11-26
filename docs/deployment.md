@@ -1,0 +1,22 @@
+# Owner deployment guide · Vercel Hobby
+
+No Vercel project has been created and no production deployment has been attempted. Leave Procurement Audit Planner and Netlify Community Hub untouched.
+
+1. Sign into the existing Vercel Hobby workspace. Choose **Add New → Project**, then import only `revrao/NextStep`. If needed, grant the GitHub integration access only to this repository.
+2. Name the **new** project `nextstep` (or an available NextStep-specific name). Never select, rename, or import over the existing Procurement Audit Planner project. Stay on Hobby; decline Pro trials and billing changes.
+3. Framework: **Next.js**, root: repository root, production branch: `main`, Node: **24.x**. Install: `npm ci`; build: `npm run build`; output: framework default. Do not use static export. The API route uses Node runtime and a 20-second maximum duration; Gemini itself times out after 12 seconds.
+4. Initially set only `AI_MODE=mock`. No Gemini key is needed. Deploy once, using the default free `vercel.app` domain. No custom domain, database or analytics product is needed.
+5. Verify landing page → fictional Milo → Find activities → activity details → enjoyed + struggled → save → new recommendations → gentler rationale. Refresh and confirm the browser retains the journey. Check a mobile viewport, history, settings deletion, direct URL with `#history`, and an unknown path. Browser data is origin-local: localhost and the deployment do not share it.
+6. Activate live AI **locally first** using the README process and complete small-batch evaluations. Check [current model availability](https://aistudio.google.com/docs/models/gemini-3.5-flash-lite), [pricing](https://aistudio.google.com/docs/pricing#gemini-3.5-flash-lite), and your actual quota before the presentation. No inference is made about your key’s availability or tier.
+7. For hosted live AI, first establish genuine deployment-level access protection supported on your Hobby workspace. Confirm direct API URLs require that protection too. A secret request code and memory throttle alone are insufficient to protect a public serverless endpoint. If adequate protection requires a paid feature, keep public production mock-only and use localhost for the classroom live path.
+8. Only on that protected **NextStep** project set server-only `GEMINI_API_KEY`, `GEMINI_MODEL`, `AI_MODE=live`, random >=16-character `DEMO_ACCESS_CODE`, `LIVE_EVAL_PASSED=true` after reviewed full acceptance, and `CLASSROOM_DEPLOYMENT_PROTECTED=true`. No `NEXT_PUBLIC_` secrets. Set only the desired environment (preview/production); never edit another project. Redeploy this project once to apply environment changes. Do not print secrets in logs or GitHub.
+9. Open the protected site, choose Live Gemini in Settings, enter the classroom code, and deliberately request ideas. A successful result must explicitly say **Live Gemini ranking**, with actual provider activity visible in your Google project. A fallback is not successful live verification. Record live evidence separately. Switch Settings to mock or set `AI_MODE=mock` and redeploy to disable live calls. An outage never needs a paid upgrade.
+10. Monitor only the NextStep project's Vercel usage/function errors and the correct Gemini project's quota in AI Studio. Check shared Hobby usage before building/deploying repeatedly. Avoid load testing or public live access. Do not enable billing, paid monitoring, external tracking, or automatic model switching.
+
+## Troubleshooting
+- Build failure: confirm Node 24, committed lockfile, root directory, no static-export override; run `npm ci && npm run build` locally. Webpack is intentional for sandbox compatibility.
+- Locked live response (403): code absent, too short, or not matching the server configuration. Do not expose it publicly.
+- Disabled response (503): server mode/key/evaluation gate or hosted protection is missing. Keep public mock mode until all operational requirements are satisfied.
+- Rate limit (429): wait at least one minute; global free-tier quota may require longer. No automatic retries. Use mock backup.
+- Fallback after provider call: quota/outage, blocked/truncated output, schema mismatch, unsupported reasons, or missed simplification. Inspect evaluation failure category without logging raw keys/context. Keep live disabled after critical acceptance failures.
+- Lost history: local storage belongs to one browser and origin; private browsing, deletion, quota limits, or new domains can remove/separate it. There is no cross-device sync.
